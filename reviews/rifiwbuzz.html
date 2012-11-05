@@ -1,0 +1,53 @@
+<?php
+include("../includes/header.php");
+?>
+</head>
+
+<body>
+
+<div id="menu">
+<!--It used that the menu was made up of over 60 lines of code.. Now it's 6 lines of code. It isn't that easier for new pages-->
+<?php
+include("../includes/menu.html");
+?>
+</div>
+
+
+<div id="content">
+
+<H1>Rifiw Buzz</H1>
+<br>
+<p class="smaller">(Thanks to <span lang="cy">LLwybr LLaethog</span> for allowing me to take this from their site)</p>
+
+<p><span lang="cy">LLwybr LLaethog</span> v <span lang="cy">Y Cyrff</span> - &quot;LLanrwst&quot;</p>
+
+<p>Hipdub reggaehoppers LL-LL are probably John Peel's 2nd favourite Welsh language act post Gorky's. <span lang="cy">Y Cyrff</span> were the 80s rebel rockers whose lead singer, Mark Roberts, went on to form Catatonia. Here the former give the latter's anthem <span lang="cy">Cymru Lloegr a Llanrwst</span> an ADF-style punk/dub makeover. The result is fast, furious and funky, with samples of someone who sounds suspiciously like SFA's Gruff Rhys. Not that the Welsh music scene is incestuous or anything.</p>
+
+<?php
+
+$internal = array ('http://christine.ycyrffgroupie.co.uk/reviews/index.html',
+		'http://christine.ycyrffgroupie.co.uk/reviews/',
+		'http://www.ycyrffgroupie.co.uk/reviews/index.html',
+		'http://www.ycyrffgroupie.co.uk/reviews/',
+		'http://dev.ycyrffgroupie.co.uk/reviews/index.html',
+		'http://dev.ycyrffgroupie.co.uk/reviews/');
+if (in_array($_SERVER[HTTP_REFERER],$internal)){
+?>
+<p><img src="../images/site/back.jpg" width="156" height="44" alt="Back/Yn ol" onClick="history.back()"></p>
+<?php
+}else{
+?>
+<a href="/reviews"><img src="../images/site/back.jpg" width="156" height="44" alt="Back/Yn ol"></a>
+<?php
+}
+?>
+
+</div>
+
+<div style="clear: both;">
+</div>
+<?php include("../includes/footer.php");?>
+
+</body>
+
+</html>

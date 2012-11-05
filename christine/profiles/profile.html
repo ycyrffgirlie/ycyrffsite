@@ -1,0 +1,85 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+<title>Profiles/Proffeilau</title>
+<meta name="KEYWORD" content="Y Cyrff, Fans Profiles">
+<meta name="DESCRIPTION" content="One of the only website about Y Cyrff. 
+Un o y unig we safle am Y Cyrff.">
+<meta name="author" content="Christine Black">
+<meta name="generator" content="Notepad, Wordpad">
+<meta http-equiv="Content-Type" content="text/html; charset=Iso-8859-14">
+<meta name="rating" content="General">
+<link rel="shortcut icon" href="../Images/icon/cyrff.ico">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31457269-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+
+<div id="menu">
+<!--It used that the menu was made up of over 60 lines of code.. Now it's 6 lines of code. It isn't that easier for new pages-->
+<?php
+include("../includes/menu.html");
+?>
+</div>
+
+<div id="content">
+
+<H1>View Fan's Profiles/<span lang="cy">Edrych ar Proffeilau Fan</span></H1>
+
+<p><a class="normal" href="chantalprofile.html">Chantal's profile/<span lang="cy">Proffeil Chantal</span></a>
+<br>
+<a class="normal" href="christineprofile.html">Christine's profile/<span lang="cy">Proffeil Christine</span></a>
+<br>
+<a class="normal" href="ffwrchamotobeicsprofile.html">FFwrchamotobeics's profile/<span lang="cy">Proffeil FFwrchamotobeics</span></a>
+<br>
+<a class="normal" href="jeniwineprofile.html">Jeni Wine's profile/<span lang="cy">Proffeil Jeni Wine</span></a>
+<br>
+<a class="normal" href="khmerhunprofile.html">Khmer Hun's profile/<span lang="cy">Proffeil Khmer Hun</span></a>
+<br>
+<a class="normal" href="llewelynrichardsprofile.html">LLewelyn Richards' profile/<span lang="cy">Proffeil LLewelyn Richards</span></a>
+<br>
+<a class="normal" href="lukeprofile.html">Luke's profile/<span lang="cy">Proffeil Luke</span></a>
+<br>
+<a class="normal" href="mrgroovyprofile.html">Mr Groovy's profile/<span lang="cy">Proffeil Mr Groovy</span></a>
+<br>
+<a class="normal" href="rhysprofile.html">Rhys' profile/<span lang="cy">Proffeil RHys</span></a><p>
+
+<?php
+
+$internal = array ('http://christine.ycyrffgroupie.co.uk/profiles/index.html',
+		'http://christine.ycyrffgroupie.co.uk/profiles/',
+		'http://www.ycyrffgroupie.co.uk/profiles/index.html',
+		'http://www.ycyrffgroupie.co.uk/profiles/',
+		'http://dev.ycyrffgroupie.co.uk/profiles/index.html',
+		'http://dev.ycyrffgroupie.co.uk/profiles/');
+if (in_array($_SERVER[HTTP_REFERER],$internal)){
+?>
+<p><img src="../images/site/back.jpg" width="156" height="44" alt="Back/Yn ol" onClick="history.back()"></p>
+<?php
+}else{
+?>
+<p>
+<a href="/profiles"><img src="../images/site/back.jpg" width="156" height="44" alt="Back/Yn ol"></a>
+</p>
+<?php
+}
+?>
+
+</body>
+
+</html>

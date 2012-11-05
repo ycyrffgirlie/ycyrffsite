@@ -1,0 +1,146 @@
+<?php
+include("../includes/header.php");
+?>
+</head>
+
+<body>
+
+<div id="menu">
+<!--It used that the menu was made up of over 60 lines of code.. Now it's 6 lines of code. It isn't that easier for new pages-->
+<?php
+include("../includes/menu.html");
+?>
+</div>
+
+<div id="content">
+
+<H1><span lang="cy">Eithaf</span></H1>
+
+<p><span lang="cy">
+Nawr ti mewn tymer,
+<br>
+Mae'n arwydd ti'n sylwi
+<br>
+Ti'n heneiddio, ti methu cystadlu
+<br>
+Treuliaist di ddeuddydd
+<br>
+I feddwl am hyn yn ddyfn
+<br>
+Hen elynion a'i gadael wrth eu cyrn</span></p>
+
+<p><span lang="cy">Mae'n hawdd fod yn unig
+<br>
+'da meddyliad cas
+<br>
+A chysgod Eryri yn cadw ti'n gaethwas
+<br>
+Ti'n dweud fod dy wreiddiau
+<br>
+yn sownd yn y werin.
+<br>
+Pob cefnder yn llwynog
+<br>
+Pob ffrind 'mond yn elyn
+<br>
+Gora po gyntaf
+<br>
+Mi awn heb amharu
+<br>
+Haws fod yn farw
+<br>
+Os hyn sy amadani
+<br>
+Cyffwrdd mewn cysur
+<br>
+Ni anifeiliaid
+<br>
+Cyffwrdd am rheswm
+<br>
+Cytun mond am eiliad.</span></p>
+
+<p><span lang="cy">Ond toeddu nhw'n ddyddiau i'r Eithaf
+<br>
+(er Gwaethaf)
+<br>
+Ond toeddu nhw'n ddyddiau mor hael
+</span></p>
+
+<p class="underline">Translation</p>
+
+<p>Now you're in a temper,
+<br>
+You notice the sign
+<br>
+You grow old, you fail to compete
+<br>
+You've spent two days
+<br>
+Thinking deeply about this
+<br>
+Taking your enemies by their horns</p>
+
+<p>Easy being alone
+<br>
+With nasty thoughts
+<br>
+And Snowdonia's shadows keeping you captive
+<br>
+You say your roots
+<br>
+are tied to the populace
+<br>
+Every cousin is a fox
+<br>
+Every friend is only an enemy
+<br>
+The sooner the better
+<br>
+To go without harming
+<br>
+Easier being dead
+<br>
+If this is what it is
+<br>
+Touch is consolation
+<br>
+Us animals
+<br>
+Touch for a reason
+<br>
+Together for only a second.</p>
+
+<p>But weren't they days to the extreme
+<br>
+(despite the worst)
+<br>
+But weren't they such liberating days </p>
+
+<?php
+
+$internal = array ('http://christine.ycyrffgroupie.co.uk/lyrics/index.html',
+		'http://christine.ycyrffgroupie.co.uk/lyrics/',
+		'http://www.ycyrffgroupie.co.uk/lyrics/index.html',
+		'http://www.ycyrffgroupie.co.uk/lyrics/',
+		'http://dev.ycyrffgroupie.co.uk/lyrics/index.html',
+		'http://dev.ycyrffgroupie.co.uk/lyrics/');
+if (in_array($_SERVER[HTTP_REFERER],$internal)){
+?>
+<p><img src="../images/site/back.jpg" width="156" height="44" alt="Back/Yn ol" onClick="history.back()"></p>
+<?php
+}else{
+?>
+<a href="/lyrics"><img src="../images/site/back.jpg" width="156" height="44" alt="Back/Yn ol"></a>
+<?php
+}
+?>
+
+</div>
+
+<div style="clear: both;">
+</div>
+<?php include("../includes/footer.php");?>
+
+</body>
+
+</html>

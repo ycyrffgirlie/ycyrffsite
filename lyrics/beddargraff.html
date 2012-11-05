@@ -1,0 +1,87 @@
+<?php
+include("../includes/header.php");
+?>
+</head>
+
+<body>
+
+<div id="menu">
+<!--It used that the menu was made up of over 60 lines of code.. Now it's 6 lines of code. It isn't that easier for new pages-->
+<?php
+include("../includes/menu.html");
+?>
+</div>
+
+<div id="content">
+<h1><span lang="cy">Beddargraff</span></h1>
+
+<p><span lang="cy">
+Hei wyt ti'n cofio fi pryd ti'n feddw?
+<br>
+Neu 'di'r amgylchfyd yn dy boeni di o hyd? 
+<br>
+Hei wyt ti'n cofio fi o gwbwl?
+<br>
+Ydi dy ben yn iawn neu ydy o'n llawn o lwch lli?</span></p>
+
+<p><span lang="cy">Nawr ti'n wared o fi wyt ti'n llon</span></p>
+
+<p><span lang="cy">Hei wyt ti dal yr un mor esgeulus?
+<br>
+Rwy'n clywed dy fod ti'n efelychiad lluchwyn. 
+<br>
+Hei wyt ti dal yr un mor rheidus?
+<br>
+Neu oes 'na dyn ebwch yn llenwi y bwlch erbyn hyn?</span></p>
+
+<p><span lang="cy">Nawr ti'n wared o fi wyt ti'n llon?</span></p>
+
+<p><span lang="cy">Mae ti a fi yn syniad hardd. 
+<br>
+A rwyn cytuno,
+<br>
+Mae na fwy i fywyd na thy a'r ardd. 
+<br>
+Nawr ti'n wared o fi wyt ti'n llon? 
+<br>
+Mae dy wallt melynddu yn ormod i mi. 
+<br>
+Mae'r gan yma'n feddargraff.
+</span></p>
+
+<p style="font-weight:bold;">If you can help me translate this song then send e-mail me 
+<a class="normal" href="contact.php" onClick="window.open('contact.php','Contact','height=800,width=500,top=150'); return false">
+here</a>.</p>
+
+<p style="font-weight:bold;">Os wyt ti'n medru helpu fi  i gyfieithu'r g&acirc;n yna anfonwch ebost fi 
+<a class="normal" href="contact.php" onClick="window.open('contact.php','Contact','height=800,width=500,top=150'); return false">
+yma</a>,</p>
+
+<?php
+
+$internal = array ('http://christine.ycyrffgroupie.co.uk/lyrics/index.html',
+		'http://christine.ycyrffgroupie.co.uk/lyrics/',
+		'http://www.ycyrffgroupie.co.uk/lyrics/index.html',
+		'http://www.ycyrffgroupie.co.uk/lyrics/',
+		'http://dev.ycyrffgroupie.co.uk/lyrics/index.html',
+		'http://dev.ycyrffgroupie.co.uk/lyrics/');
+if (in_array($_SERVER[HTTP_REFERER],$internal)){
+?>
+<p><img src="../images/site/back.jpg" width="156" height="44" alt="Back/Yn ol" onClick="history.back()"></p>
+<?php
+}else{
+?>
+<a href="/lyrics"><img src="../images/site/back.jpg" width="156" height="44" alt="Back/Yn ol"></a>
+<?php
+}
+?>
+
+</div>
+
+<div style="clear: both;">
+</div>
+<?php include("../includes/footer.php");?>
+
+</body>
+
+</html>

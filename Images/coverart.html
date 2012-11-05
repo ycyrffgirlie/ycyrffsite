@@ -1,0 +1,121 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+<title>Cover Art/Celf y Clawr</title>
+<meta name="KEYWORD" content="Y Cyrff, Y Cyrff picture">
+<meta name="DESCRIPTION" content="One of the only website about Y Cyrff. 
+Un o y unig we safle am Y Cyrff.">
+<meta name="author" content="Christine Black">
+<meta name="generator" content="SCiTE">
+<meta http-equiv="Content-Type" content="text/html; charset=Iso-8859-14">
+<meta name="rating" content="General">
+<link rel="shortcut icon" href="Images/icon/cyrff.ico">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<link rel="stylesheet" type="text/css" href="../css/gallery.css">
+<style type="text/css">
+/**thumbnails are longer on this page. This is the fix**/
+#gallery {
+	height:350px;
+}
+#gallery li {
+	height:160px;
+}
+#gallery li a {
+	height:160px !important /* IE5 Mac */;
+)
+</style>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js">
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('img[class=pic]').css('border', 'none'); /*The hack for IE, IE is just a pain in the arse  Microsoft, why can't you follow standards? Your not the leaders of the world - get over it. Anyway who wants to buy your crappy software anyway?*/
+	$('img[class=pic]').mouseover(function() {
+	$(this).css('border','3px solid #ffffff');
+	});
+	$('img[class=pic]').mouseout(function() {
+	$(this).css('border','none');
+	});
+});
+</script>
+</head>
+
+<body>
+<div id="menu">
+<?php
+include("../includes/menu.html");
+?>
+</div>
+
+<div id="content">
+<h1>Cover Art / <span lang="cy">Celf y Clawr</span></h1>
+
+
+<p>Click on a thumbnail for a larger picture.
+<br>
+<span lang="cy">Clec ar y thumbnail i'r llun mwy.</span></p>
+
+<ul id="gallery">
+
+	<li>
+		<a class="pic" href="ankst1.html" onClick="window.open('ankst1.html','Ankst','height=540,width=560,top=150'); return false" >
+		<img class="pic"  src="ankst1_small.jpg" alt="LLawenydd Heb DDiwedd" height="130" width="100"></a>
+	</li>
+	<li> 
+		<a class="pic" href="yrhaint.html" onClick="window.open('yrhaint.html','yrhaint','height=540,width=560,top=150'); return false" >
+		<img class="pic"  src="yr_haint_small.jpg" alt="Yr Haint" height="104" width="100"></a>
+	</li>
+	<li>
+		<a class="pic" href="ankst3.html" onClick="window.open('ankst3.html','Ankst3','height=540,width=560,top=150'); return false" >
+		<img class="pic"  src="ankst3_small.jpg" alt="Damwain Mewn FFatri Cyllyll a FFyrc" height="77" width="100"></a>
+	</li>
+	<li>
+		<a class="pic" href="pummunud.html" onClick="window.open('pum_munud.html','Pum_Munud','height=540,width=560,top=150'); return false" >
+		<img class="pic"  src="pum_munud_small.jpg" alt="Pum Munud 7&quot;" height="100" width="100"></a>
+	</li>
+	<li>
+		<a class="pic" href="untitled12.html" onClick="window.open('untitled12.html','untitled12','height=540,width=560,top=150'); return false" >
+		<img class="pic"  src="untitled12.jpg" alt="Untitled 12&quot;" height="100" width="100"></a>
+	</li>
+	<li> 
+		<a class="pic" href="rasal12.html" onClick="window.open('rasal12.html','rasal12','height=540,width=560,top=150'); return false" >
+		<img class="pic"  src="rasal12_small.jpg" alt="Atalnod LLawn" height="99" width="100"></a>
+	</li>
+	<li> 
+		<a class="pic" href="awdloanobaith.html" onClick="window.open('awdloanobaith.html','awdloanobaith','height=540,width=560,top=150'); return false" >
+		<img class="pic"  src="awdl_o_anobaith_small.jpg" alt="Awdl o Anobaith" height="103" width="100"></a>
+	</li>
+	<li> 
+		<a class="pic" href="hwylfawrheulwen.html" onClick="window.open('hwylfawrheulwen.html','hwyl_fawr_heulwen','height=540,width=560,top=150'); return false" >
+		<img class="pic"  src="hwyl_fawr_heulwen_small.jpg" alt="Hwyl Fawr Heulwen" height="101" width="100"></a>
+	</li>
+	<li>
+		<a class="pic" href="ankst2.html" onClick="window.open('ankst2.html','Ankst2','height=540,width=560,top=150'); return false" >
+		<img class="pic"  src="ankst2_small.jpg" alt="Mae DDoe Yn DDoe" height="158" width="100"></a>
+	</li>
+</ul>
+
+<?php
+
+$internal = array ('http://christine.ycyrffgroupie.co.uk/Images/index.html',
+		'http://christine.ycyrffgroupie.co.uk/Images/',
+		'http://www.ycyrffgroupie.co.uk/Images/index.html',
+		'http://www.ycyrffgroupie.co.uk/Images/',
+		'http://dev.ycyrffgroupie.co.uk/Images/index.html',
+		'http://dev.ycyrffgroupie.co.uk/Images/');
+if (in_array($_SERVER[HTTP_REFERER],$internal)){
+?>
+<p><img src="site/back.jpg" width="156" height="44" alt="Back/Yn ol" onClick="history.back()"></p>
+<?php
+}else{
+?>
+<p><a href="/Images"><img src="site/back.jpg" width="156" height="44" alt="Back/Yn ol"></a></p>
+<?php
+}
+?>
+
+</div>
+</body>
+
+</html>

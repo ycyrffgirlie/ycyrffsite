@@ -1,0 +1,94 @@
+<?php
+include("../includes/header.php");
+?>
+</head>
+
+<body>
+
+<div id="menu">
+<!--It used that the menu was made up of over 60 lines of code.. Now it's 6 lines of code. It isn't that easier for new pages-->
+<?php
+include("../includes/menu.html");
+?>
+</div>
+
+<div id="content">
+<h1><span lang="cy">Pethau Achlysurol</span></h1>
+
+<p><span lang="cy">
+Ymddiheuraf ond rhaid mi dy farnu 
+<br>
+'Swn i'n hoffi dy gem di barhau 
+<br>
+Ellai byth anwybyddu dy afael
+<br>
+Ti'n bythol wyrdd a dwi'n collddail 
+<br>
+Hefo partner newydd bob tro
+<br>
+Ie ti'n newid nhw fel y tywydd 
+<br>
+Sut elli di cael hyd i gariad 
+<br>
+Pryd ti'n edrych yn y llefydd anghywir.</span></p>
+
+<p><span lang="cy">Pob nos ti'n rhoi dy hun i ffwrdd.
+<br>
+LLaw yn llaw cewch dinistrio eich gobeithion.</span></p>
+
+<p><span lang="cy">Ti'n caru pethau, pethau achlysurol.</span></p>
+
+<p><span lang="cy">Gest ti	llai na nest ti fargeinio,
+<br>
+Pob tro	mae hyn yn wir
+<br>
+Mae dy freichiau fel carchar rhywiol
+<br>
+Ond di bywyd ddim yn ddigon hir</span></p>
+
+<p><span lang="cy">Pob nos ti'n rhoi dy hun i ffwrdd.
+<br>
+LLaw yn llaw cewch dinistrio eich gobeithion.</span></p>
+
+<p><span lang="cy">Ti'n ddeud ti mor ddigyfaddawd, ydi hyn yn wir?</span></p>
+
+<p><span lang="cy">Pob nos ti'n rhoi dy hun i ffwrdd.
+<br>
+LLaw yn llaw cewch dinistrio eich gobeithion.</span></p>
+
+<p style="font-weight:bold;">If you can help me translate this song then send e-mail me 
+<a class="normal" href="contact.php" onClick="window.open('contact.php','Contact','height=800,width=500,top=150'); return false">
+here</a>.</p>
+
+<p style="font-weight:bold;">Os wyt ti'n medru helpu fi  i gyfieithu'r g&acirc;n yna anfonwch ebost fi 
+<a class="normal" href="contact.php" onClick="window.open('contact.php','Contact','height=800,width=500,top=150'); return false">
+yma</a>,</p>
+
+<?php
+
+$internal = array ('http://christine.ycyrffgroupie.co.uk/lyrics/index.html',
+		'http://christine.ycyrffgroupie.co.uk/lyrics/',
+		'http://www.ycyrffgroupie.co.uk/lyrics/index.html',
+		'http://www.ycyrffgroupie.co.uk/lyrics/',
+		'http://dev.ycyrffgroupie.co.uk/lyrics/index.html',
+		'http://dev.ycyrffgroupie.co.uk/lyrics/');
+if (in_array($_SERVER[HTTP_REFERER],$internal)){
+?>
+<p><img src="../images/site/back.jpg" width="156" height="44" alt="Back/Yn ol" onClick="history.back()"></p>
+<?php
+}else{
+?>
+<a href="/lyrics"><img src="../images/site/back.jpg" width="156" height="44" alt="Back/Yn ol"></a>
+<?php
+}
+?>
+
+</div>
+
+<div style="clear: both;">
+</div>
+<?php include("../includes/footer.php");?>
+
+</body>
+
+</html>

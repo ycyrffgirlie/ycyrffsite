@@ -1,0 +1,50 @@
+<?php
+include("../includes/header.php");
+?>
+</head>
+
+<body>
+
+<div id="menu">
+<!--It used that the menu was made up of over 60 lines of code.. Now it's 6 lines of code. It isn't that easier for new pages-->
+<?php
+include("../includes/menu.html");
+?>
+</div>
+
+<div id="content">
+
+<p>Thursday 13th October, there will be a whole Bandit programme decided to <span lang="cy">Y Cyrff</span>. The show includes a visit to LLanrwst as well as coverage of one of the gigs of the <span lang="cy">Cymru, LLoegr a LLanrwst Taith</span>. Also Mark and Paul will  be guest on the show. Bandit will be show on S4C at 10.00pm. For those who have access to S4C, get your video recorder set!</p>
+
+<p><span lang="cy">Dydd Iau 13eg Hydreg, bydd holl Bandit rhaglen cyflwyo i'r Cyrff. Bydd sioe cynnwyn ymweld ag i Lanrwst yn ogystala darlledu o un o'r gigau o'r Cymru, LLoegr a LLanrwst Taith. Hefyd bydd Mark a Paul yn gwesteion ar y sioe. Bydd Bandit yn darlledu ar S4C am ddeg o'r gloch. I'r rheiny efo mynediad i S4C, gosodwch eich recordydd fideo!</span></p>
+
+<?php
+
+$internal = array ('http://christine.ycyrffgroupie.co.uk/news/index.html',
+		'http://christine.ycyrffgroupie.co.uk/news/',
+		'http://www.ycyrffgroupie.co.uk/news/index.html',
+		'http://www.ycyrffgroupie.co.uk/news/',
+		'http://dev.ycyrffgroupie.co.uk/news/index.html',
+		'http://dev.ycyrffgroupie.co.uk/news/');
+if (in_array($_SERVER[HTTP_REFERER],$internal)){
+?>
+<p><img src="../images/site/back.jpg" width="156" height="44" alt="Back/Yn ol" onClick="history.back()"></p>
+<?php
+}else{
+?>
+<p>
+<a href="/news"><img src="../images/site/back.jpg" width="156" height="44" alt="Back/Yn ol"></a>
+</p>
+<?php
+}
+?>
+
+</div>
+
+<div style="clear: both;">
+</div>
+<?php include("../includes/footer.php");?>
+
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<?php
+include("../includes/header.php");
+?>
+
+<body>
+<div id="menu">
+<!--It used that the menu was made up of over 60 lines of code.. Now it's 6 lines of code. It isn't that easier for new pages-->
+<?php
+include("../includes/menu.html");
+?>
+</div>
+
+
+<div id="content">
+
+<h1><span lang="cy">Y Cyrff</span> Quiz</h1>
+<p><b>Test your knowledge of Y Cyrff!</b></p>
+<hr>
+<FORM>
+<p><b>1. Where are <span lang="cy">Y Cyrff</span> from?</b><br>
+<input type=radio name="q1" value="a" onClick="Engine(1, this.value)">a) LLanwrst<br>
+<input type=radio name="q1" value="b" onClick="Engine(1, this.value)">b) Worthing<br>
+<input type=radio name="q1" value="c" onClick="Engine(1, this.value)">c) London<br>
+<input type=radio name="q1" value="d" onClick="Engine(1, this.value)">d) Cardiff
+</p>
+
+<p><b>2. Who was the lead singer?</b><br>
+<input type=radio name="q2" value="a" onClick="Engine(2, this.value)">a) Paul<br>
+<input type=radio name="q2" value="b" onClick="Engine(2, this.value)">b) Barry<br>
+<input type=radio name="q2" value="c" onClick="Engine(2, this.value)">c) Mark Roberts<br>
+<input type=radio name="q2" value="d" onClick="Engine(2, this.value)">d) Dylan
+</p>
+
+<p><b>3. What language did <span lang="cy">Y Cyrff</span> sing in?</b><br>
+<input type=radio name="q3" value="a" onClick="Engine(3, this.value)">a) English<br>
+<input type=radio name="q3" value="b" onClick="Engine(3, this.value)">b) Welsh<br>
+<input type=radio name="q3" value="c" onClick="Engine(3, this.value)">c) Russian<br>
+<input type=radio name="q3" value="d" onClick="Engine(3, this.value)">d) French  
+</p>
+
+<p><b>4. Finish the name of this title <span lang="cy">Mae DDoe Yn ...</span></b><br>
+<input type=radio name="q4" value="a" onClick="Engine(4, this.value)">a) <span lang="cy">Cymru</span><br>
+<input type=radio name="q4" value="b" onClick="Engine(4, this.value)">b) <span lang="cy">Doe</span><br>
+<input type=radio name="q4" value="c" onClick="Engine(4, this.value)">c) <span lang="cy">DDoe</span><br>
+<input type=radio name="q4" value="d" onClick="Engine(4, this.value)">d) LLanrwst  
+</p>
+
+<p><b>5. Which year did <span lang="cy">Y Cyrff</span> split up?</b><br>
+<input type=radio name="q5" value="a" onClick="Engine(5, this.value)">a) 1991<br>
+<input type=radio name="q5" value="b" onClick="Engine(5, this.value)">b) 2001<br>
+<input type=radio name="q5" value="c" onClick="Engine(5, this.value)">c) 1891<br>
+<input type=radio name="q5" value="d" onClick="Engine(5, this.value)">d) 1969 
+</p>
+
+<p><b>6. Mark and Paul went on to be in which group?</b><br>
+<input type=radio name="q6" value="a" onClick="Engine(6, this.value)">A) Manic Street Preachers<br>
+<input type=radio name="q6" value="b" onClick="Engine(6, this.value)">b) Sterophonics<br>
+<input type=radio name="q6" value="c" onClick="Engine(6, this.value)">c) Super Furries Animals<br>
+<input type=radio name="q6" value="d" onClick="Engine(6, this.value)">d) Catatonia
+</p>
+
+
+<p><input type=button onClick="Score()" value="Well... How did I do?"></p>
+
+
+</FORM>
+
+<?php
+
+$internal = array ('http://christine.ycyrffgroupie.co.uk/gamess/index.html',
+		'http://christine.ycyrffgroupie.co.uk/games/',
+		'http://www.ycyrffgroupie.co.uk/games/index.html',
+		'http://www.ycyrffgroupie.co.uk/games/',
+		'http://dev.ycyrffgroupie.co.uk/games/index.html',
+		'http://dev.ycyrffgroupie.co.uk/games/');
+if (in_array($_SERVER[HTTP_REFERER],$internal)){
+?>
+<p><img src="../images/site/back.jpg" width="156" height="44" alt="Back/Yn ol" onClick="history.back()"></p>
+<?php
+}else{
+?>
+<p>
+<a href="/games"><img src="../images/site/back.jpg" width="156" height="44" alt="Back/Yn ol"></a>
+</p>
+<?php
+}
+?>
+
+</div>
+
+<div style="clear: both;">
+</div>
+<?php include("../includes/footer.php");?>
+
+</body>
+
+</html>

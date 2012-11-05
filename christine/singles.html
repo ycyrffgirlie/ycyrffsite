@@ -1,0 +1,85 @@
+<?php 
+include("includes/header.php")
+?>
+
+<body>
+
+<div id="menu">
+<!--It used that the menu was made up of over 60 lines of code.. Now it's 6 lines of code. It isn't that easier for new pages-->
+<?php
+include("includes/menu.html");
+?>
+</div>
+
+<div id="content">
+
+<H1>Singles/<span lang="cy">Senglau</span></H1>
+
+<br>
+<br>
+
+<table>
+ 	<tr>
+		<td class="51">&nbsp;</td>
+		<td class="49">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="51"><img src="Images/yr_haint_small.jpg" class="100" height="104" alt="Yr Haint"></td>
+		<td class="49">	<a class="normal" href="sound_clips/y_cyrff_yr_haint.mp3"><span lang="cy">Yr Haint</span></a><br>
+									<a class="normal" href="sound_clips/y_cyrff_ar_goll.mp3"><span lang="cy">Ar Goll</span></a></td>
+	</tr>
+ 	<tr>
+		<td class="51">&nbsp;</td>
+		<td class="49">&nbsp;</td>
+	</tr>
+
+	<tr>
+		<td class="51">	<a class="normal" href="sound_clips/y_cyrff_pum_munud.mp3"><span lang="cy">Pum Munud</span></a><br>
+									<a class="normal" href="sound_clips/y_cyrff_trwyr_cymylau.mp3"><span lang="cy">Trwy'r Cymylau</span></a></td>
+		<td class="49"><img src="Images/pum_munud_small.jpg" class="100" height="100" alt="Pum Munud"></td>
+	</tr>
+ 	<tr>
+		<td class="51">&nbsp;</td>
+		<td class="49">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="51"><p><span lang="cy">Cadwyni/HTV/BBC</span></p></td>
+		<td class="49">	<a class="normal" href="sound_clips/y_cyrff_cadwyni.mp3"><span lang="cy">Cadwyni</span></a><br>
+									<a class="normal" href="sound_clips/y_cyrff_htv_bbc.mp3"><span lang="cy">HTV/BBC</span></a></td>
+	</tr>
+ 	<tr>
+		<td class="51">&nbsp;</td>
+		<td class="49">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="51">	<a class="normal" href="sound_clips/y_cyrff_pethau_achlysurol.mp3"><span lang="cy">Pethau Achlysurol</span></a><br>
+									<a class="normal" href="sound_clips/y_cyrff_hwyl_fawr_heulwen.mp3"><span lang="cy">Hwyl Fawr Heulwen</span></a></td>
+		<td class="49"><img src="Images/hwyl_fawr_heulwen_small.jpg" class="101" height="100" alt="Hwyl Fawr Heulwen"></td>
+	</tr>
+</table>
+
+<?php
+
+$internal = array('http://christine.ycyrffgroupie.co.uk/discography.html',
+		'http://www.ycyrffgroupie.co.uk/discography.html',
+		'http://dev.ycyrffgroupie.co.uk/discography.html');
+if (in_array($_SERVER[HTTP_REFERER],$internal)){
+?>
+<p><img src="../Images/site/back.jpg" width="156" height="44" alt="Back/Yn ol" onClick="history.back()"></p>
+<?php
+}else{
+?>
+<a href="/discography.html"><img src="../Images/site/back.jpg" width="156" height="44" alt="Back/Yn ol"></a>
+<?php
+}
+?>
+
+</div>
+
+<div style="clear: both;">
+</div>
+<?php include("includes/footer.php");?>
+
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<?php
+include("../includes/header.php");
+?>
+
+<body>
+
+<div id="menu">
+<!--It used that the menu was made up of over 60 lines of code.. Now it's 6 lines of code. It isn't that easier for new pages-->
+<?php
+include("../includes/menu.html");
+?>
+</div>
+
+
+<div id="content">
+<H1>How Drunk Are You?</H1>
+
+<p>Alcohol Test</p>
+
+
+<p>If you can't click this button, you must be drunk!<BR>You have one 60 sec.</p>
+
+<p><INPUT
+ TYPE="BUTTON"
+ ID="button1"
+ onClick="finish(win)"
+ onMouseOver="this.style.position='absolute'; moveme(this)"
+ VALUE="CLICK IF NOT DRUNK"
+ STYLE="display:none; top:300; left:200">
+
+<INPUT
+ TYPE="BUTTON"
+ ID="button2"
+ onClick="finish(win)"
+ onMouseOver="button1.style.display=''; button3.style.display=''; this.style.position='absolute'; moveme(this); timer = setTimeout('finish(lose)', 60000)"
+ VALUE="CLICK IF NOT DRUNK"
+ STYLE="top:300; left:200">
+
+<INPUT
+ TYPE="BUTTON"
+ ID="button3"
+ onClick="finish(win)"
+ onMouseOver="this.style.position='absolute'; moveme(this)"
+ VALUE="CLICK IF NOT DRUNK"
+ STYLE="display:none; top:300; left:200">
+</p>
+
+<p><SPAN ID="output"></SPAN></p>
+
+<?php
+
+$internal = array ('http://christine.ycyrffgroupie.co.uk/gamess/index.html',
+		'http://christine.ycyrffgroupie.co.uk/games/',
+		'http://www.ycyrffgroupie.co.uk/games/index.html',
+		'http://www.ycyrffgroupie.co.uk/games/',
+		'http://dev.ycyrffgroupie.co.uk/games/index.html',
+		'http://dev.ycyrffgroupie.co.uk/games/');
+if (in_array($_SERVER[HTTP_REFERER],$internal)){
+?>
+<p><img src="../images/site/back.jpg" width="156" height="44" alt="Back/Yn ol" onClick="history.back()"></p>
+<?php
+}else{
+?>
+<p>
+<a href="/games"><img src="../images/site/back.jpg" width="156" height="44" alt="Back/Yn ol"></a>
+</p>
+<?php
+}
+?>
+
+</div>
+
+<div style="clear: both;">
+</div>
+<?php include("../includes/footer.php");?>
+
+</body>
+</html>

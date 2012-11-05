@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+<title>How Drunk Are You?</title>
+<meta name="KEYWORD" content="Y Cyrff, alcohol test">
+<meta name="DESCRIPTION" content="One of the only website about Y Cyrff. 
+Un o y unig we safle am Y Cyrff.">
+<meta name="author" content="Christine Black">
+<meta name="generator" content="Notepad, Wordpad">
+<meta http-equiv="Content-Type" content="text/html; charset=Iso-8859-14">
+<meta name="rating" content="General">
+<link rel="shortcut icon" href="../Images/icon/cyrff.ico">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<script type="Javascript">
+var lose = 'YOU ARE DRUNK! OH NO!<BR><BR>Thank you for taking the Alcohol Test  '
+var win = 'YOU ARE NOT DRUNK! GOOD!<BR><BR>Thank you for taking the Alcohol Test '
+
+function finish(message) {
+ clearTimeout(timer)
+ output.innerHTML = message
+ button1.style.display='none'
+ button2.style.display='none'
+ button3.style.display='none'
+ }
+
+function moveme(obj) {
+ obj.style.pixelLeft += Math.random() * 250 - 150
+ obj.style.pixelTop += Math.random() * 250 - 150
+ }
+</SCRIPT>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31457269-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+<center><font><b>Sut meddw dach chi?</b></font>
+
+<br>
+<br>
+
+<font><b>Prawf Alcohol</b></font>
+
+<br>
+<br>
+
+<font>Os gellwch chi ddim clic hwm butwn rhaid fod chi'n meddw<BR>Mae gennych chi un 60 eiliad.</font>
+
+<br>
+<br>
+
+<INPUT
+ TYPE=BUTTON
+ ID=button1
+ onClick="finish(win)"
+ onMouseOver="this.style.position='absolute'; moveme(this)"
+ VALUE="CLIC YMA OS DIM MEDDW"
+ STYLE="display:none; top:300; left:200">
+
+<INPUT
+ TYPE=BUTTON
+ ID=button2
+ onClick="finish(win)"
+ onMouseOver="button1.style.display=''; button3.style.display=''; this.style.position='absolute'; moveme(this); timer = setTimeout('finish(lose)', 60000)"
+ VALUE="CLIC YMA OS DIM MEDDW"
+ STYLE="top:300; left:200">
+
+<INPUT
+ TYPE=BUTTON
+ ID=button3
+ onClick="finish(win)"
+ onMouseOver="this.style.position='absolute'; moveme(this)"
+ VALUE="CLIC YMA OS DIM MEDDW"
+ STYLE="display:none; top:300; left:200">
+
+
+<font><SPAN ID="output"></SPAN></font>
+
+</center>
+
+<img src="../Images/site/back.jpg" width="156" height="44" alt="Back/Yn ol" onClick="history.back()"> 
+
+
+</body>
+</html>

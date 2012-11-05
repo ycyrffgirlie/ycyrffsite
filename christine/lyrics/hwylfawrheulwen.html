@@ -1,0 +1,121 @@
+<?php
+include("../includes/header.php");
+?>
+</head>
+
+<body>
+<div id="menu">
+<!--It used that the menu was made up of over 60 lines of code.. Now it's 6 lines of code. It isn't that easier for new pages-->
+<?php
+include("../includes/menu.html");
+?>
+</div>
+
+<div id="content">
+<h1><span lang="cy">Hwyl Fawr Heulwen</span></h1>
+
+<p><span lang="cy">
+O Mam dwi lawr dwi'n sal dwi'n brifo. 
+<br>
+Wnes i pob camgymeriad yn y llyfr. 
+<br>
+Paham nest ti ddim rhybuddio?
+<br>
+Plis neu di adael fi egluro,
+<br>
+Mae bywyd jyst yn ffordd o farw'n aradeg.</span></p>
+
+<p><span lang="cy">O Mam dwi'n wan ond pryd nath hi ddod
+<br>
+0'n i'n sefyll ar 'sgwyddau dyn tala'r byd. 
+<br>
+Jyst fel breuddwyd.
+<br>
+Mae gennyf llond llyfr o esgusion
+<br>
+A jyst pryd o'n i'n meddwl bod fi heb fy'n ail 
+<br>
+Collddail, collddail.</span></p>
+
+<p><span lang="cy">Cipolwg gesi
+<br>
+Ond lles i ddim ei cyffwrdd
+<br>
+Cipolwg o'r wobr lles i ddim ei cyffwrdd 
+<br>
+Hwyl Fawr Heulwen
+<br>
+Dwi bron a marw isho byw.</span></p>
+
+<p><span lang="cy">Mae ddoe yn ddoe a heddiw sy'n cyfri 
+<br>
+Ac os nei di ganolbwyntio
+<br>
+Hen bryd i ti atgyfodi.</span></p>
+
+<p><span lang="cy">Hen bryd am yr atgyfodi.
+<br>
+Jyst pryd o'n i'n meddwl~bod fi heb fy'n ail 
+<br>
+Collddail, collddail.</span></p>
+
+<p><span lang="cy">Cipolwg gesi
+<br>
+Ond lles i ddim ei cyffwrdd
+<br>
+Cipolwg o'r wobr lles i ddim ei cyffwrdd 
+<br>
+Hwyl Fawr Heulwen
+<br>
+Dwi bron a marw isho byw.</span></p>
+
+<p><span lang="cy">Mae'n ddrwg gen i.</span></p>
+
+<p><span lang="cy">Cyn i ti siarad o'n i'n crynu yn barod 
+<br>
+Cyn i ti wenu oedd y nos ar fy mhen i 
+<br>
+Methu cael hyd i'r lleisiau
+<br>
+Methu cael hyd i'r geiriau 
+<br>
+Ni bia'r hawlfraint tristwch
+<br>
+Paham nes ti ddim gadael fi ddweud Hwyl Fawr Heulwen</span></p>
+
+<p style="font-weight:bold;">If you can help me translate this song then send e-mail me 
+<a class="normal" href="contact.php" onClick="window.open('contact.php','Contact','height=800,width=500,top=150'); return false">
+here</a>.</p>
+
+<p style="font-weight:bold;">Os wyt ti'n medru helpu fi  i gyfieithu'r g&acirc;n yna anfonwch ebost fi 
+<a class="normal" href="contact.php" onClick="window.open('contact.php','Contact','height=800,width=500,top=150'); return false">
+yma</a>,</p>
+
+<?php
+
+$internal = array ('http://christine.ycyrffgroupie.co.uk/lyrics/index.html',
+		'http://christine.ycyrffgroupie.co.uk/lyrics/',
+		'http://www.ycyrffgroupie.co.uk/lyrics/index.html',
+		'http://www.ycyrffgroupie.co.uk/lyrics/',
+		'http://dev.ycyrffgroupie.co.uk/lyrics/index.html',
+		'http://dev.ycyrffgroupie.co.uk/lyrics/');
+if (in_array($_SERVER[HTTP_REFERER],$internal)){
+?>
+<p><img src="../images/site/back.jpg" width="156" height="44" alt="Back/Yn ol" onClick="history.back()"></p>
+<?php
+}else{
+?>
+<a href="/lyrics"><img src="../images/site/back.jpg" width="156" height="44" alt="Back/Yn ol"></a>
+<?php
+}
+?>
+
+</div>
+
+<div style="clear: both;">
+</div>
+<?php include("../includes/footer.php");?>
+
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+<title>Christine's profile</title>
+<meta name="KEYWORD" content="Y Cyrff, Christine Profile">
+<meta name="DESCRIPTION" content="One of the only website about Y Cyrff. 
+Un o y unig we safle am Y Cyrff.">
+<meta name="author" content="Christine Black">
+<meta name="generator" content="Notepad, Wordpad">
+<meta http-equiv="Content-Type" content="text/html; charset=Iso-8859-14">
+<meta name="rating" content="General">
+<link rel="shortcut icon" href="../Images/icon/cyrff.ico">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31457269-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+
+<div id="menu">
+<!--It used that the menu was made up of over 60 lines of code.. Now it's 6 lines of code. It isn't that easier for new pages-->
+<?php
+include("../includes/menu.html");
+?>
+</div>
+
+<div id="content">
+<H1>Christine's profile/<span lang="cy">Proffeil Christine</span></H1>
+
+<p>
+<b>Name/<span lang="cy">Enw:</span></b>&nbsp;Christine, aka <span lang="cy">y cyrff</span> groupie or <span lang="cy">y cyrff</span> girlie or <span lang="cy">Cyrff</span> webmistress.
+<br>
+<b>Location/<span lang="cy">LLe:</span></b>&nbsp;Newbury, U.K
+<br>
+<b>Website/<span lang="cy">Gwe safle:</span></b>&nbsp;you know or other else you wouldn't do this bio thingy
+<br>
+<b>E-mail/<span lang="cy">E-bost:</span></b>&nbsp;ycyrffgroupie@gmail.com
+<br>
+<b>Where did you first heard about Cyrff?/<span lang="cy">LLe naethoch chi cyntaf wedi clywed am Y Cyrff?</span></b>&nbsp;Yoiu know, you can read about it <a class="normal" href="../aboutme.html">here</a>
+<br>
+<b>Favourite Cyrff song/<span lang="cy">Hoff g&acirc;n Cyrff:</span></b>&nbsp;<span lang="cy">Mewn Plu</span>
+<br>
+<b>Favorite Cyrff album/<span lang="cy">Hoff albwn Cyrff:</span></b>&nbsp;<span lang="cy">LLawenydd</span> for sick days or <span lang="cy">Mae DDoe Yn DDoe</span> for other times.
+<br>
+<b>Other comments/<span lang="cy">Eraill sywl:</span></b>&nbsp;I am the drunk <span lang="cy">Cyrff</span> webmisrrtress and end up dsleeping, eating, brushimng my teeth, getting changed in front of my computer to keep you lot happy and of course <span lang="cy">Cyrff</span>. Ity doesn't lot got ggod for the websmistrees to drunk abd i think somebody ownes myew a drink - Jack Danirels with coke or a pint of guinness will be fibne.  mm <span lang="cy">Mewn Plu</span>. Somebidy needs to send me an e-,mail (you know who you are)
+</p>
+
+<?php
+
+$internal = array ('http://christine.ycyrffgroupie.co.uk/profiles/profile.html',
+		'http://www.ycyrffgroupie.co.uk/profiles/profile.html',
+		'http://dev.ycyrffgroupie.co.uk/profiles/profile.html');
+if (in_array($_SERVER[HTTP_REFERER],$internal)){
+?>
+<p><img src="../images/site/back.jpg" width="156" height="44" alt="Back/Yn ol" onClick="history.back()"></p>
+<?php
+}else{
+?>
+<p>
+<a href="/profiles/profile.html"><img src="../images/site/back.jpg" width="156" height="44" alt="Back/Yn ol"></a>
+</p>
+<?php
+}
+?>
+
+</div>
+
+<div style="clear: both;">
+</div>
+<?php include("../includes/footer.php");?>
+
+</body>
+
+</html>

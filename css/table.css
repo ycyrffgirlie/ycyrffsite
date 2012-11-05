@@ -1,0 +1,43 @@
+table{
+bordercolor:red;
+}
+
+td.51 {
+	width: 51%;
+	text-align:center;
+}
+
+td.50right {
+	width: 50%;
+	text-align:right;
+}
+
+td.50left {
+	width: 50%;
+	text-align:left;
+}
+
+td.49 {
+	width: 49%;
+	text-align:center;
+}
+
+table.admin{
+border-width: 2px 2px 2px 2px;
+border-style: solid solid solid solid;
+border-color: #FFFFFF #FFFFFF #FFFFFF #FFFFFF;
+}
+
+th.admin{ 	
+color: #ffd700;
+border-width: 1px 1px 1px 1px;
+border-style: solid solid solid solid;
+border-color: #FFFFFF #FFFFFF #FFFFFF #FFFFFF;
+}
+
+td.admin{ 	
+color: #ffd700;
+border-width: 1px 1px 1px 1px;
+border-style: solid solid solid solid;
+border-color: #FFFFFF #FFFFFF #FFFFFF #FFFFFF;
+}

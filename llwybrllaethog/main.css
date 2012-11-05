@@ -1,0 +1,71 @@
+body{
+	background-image: url("PICTURES/stars.jpg");
+	background-color:#000000;
+	
+}
+
+p{
+	font-family:arial, san-serif;
+	color:#FFFFFF;
+}
+
+H1{
+	font-family:arial, san-serif;
+	color:#FFFFFF;
+}
+
+H2{
+	font-family: arial, san-serif;
+	color: #FFFFFF;
+}
+
+H3{
+	font-family: arial, san-serif;
+	color: #FFFFFF;
+}
+
+H4{
+	font-family: arial, san-serif;
+	color: #FFFFFF;
+}
+
+H5{
+	font-family: arial, san-serif;
+	color: #FFFFFF;
+}
+
+H6{
+	font-family: arial, san-serif;
+	color: #FFFFFF;
+}
+
+H7{
+	font-family: arial, san-serif;
+	color: #FFFFFF;
+}
+
+a:visited{
+	color:#CD2990;
+	font-family:arial, san-serif;
+}
+
+a:unvisited{
+	color:#FF1CAE;
+	font-family:arial, san-serif;
+}
+
+
+a:link{
+	color:#FFFFFF;
+	font-family:arial, san-serif;
+}
+
+td{
+	font-family:arial, san-serif;
+	color:#FFFFFF;
+}
+
+th{
+	font-family:arial, san-serif;
+	color:#FFFFFF;
+}

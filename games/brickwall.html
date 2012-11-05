@@ -1,0 +1,48 @@
+<?php
+include("../includes/header.php");
+?>
+
+<body>
+<!--It used that the menu was made up of over 60 lines of code.. Now it's 6 lines of code. It isn't that easier for new pages-->
+<div id="menu">
+<?php
+include("../includes/menu.html");
+?>
+</div>
+
+
+
+<div id="content">
+<applet code="ClrDrawApplet.class" width="400" height="285">
+</applet> 
+
+<?php
+
+$internal = array ('http://christine.ycyrffgroupie.co.uk/gamess/index.html',
+		'http://christine.ycyrffgroupie.co.uk/games/',
+		'http://www.ycyrffgroupie.co.uk/games/index.html',
+		'http://www.ycyrffgroupie.co.uk/games/',
+		'http://dev.ycyrffgroupie.co.uk/games/index.html',
+		'http://dev.ycyrffgroupie.co.uk/games/');
+if (in_array($_SERVER[HTTP_REFERER],$internal)){
+?>
+<p><img src="../images/site/back.jpg" width="156" height="44" alt="Back/Yn ol" onClick="history.back()"></p>
+<?php
+}else{
+?>
+<p>
+<a href="/games"><img src="../images/site/back.jpg" width="156" height="44" alt="Back/Yn ol"></a>
+</p>
+<?php
+}
+?>
+
+</div>
+
+<div style="clear: both;">
+</div>
+<?php include("../includes/footer.php");?>
+
+</body>
+
+</html>

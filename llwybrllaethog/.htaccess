@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "llwybrllaethog"
+AuthUserFile "/home/ycyrf718/.htpasswds/public_html/llwybrllaethog/passwd"
+require valid-user

@@ -1,0 +1,62 @@
+<?php
+include("../includes/header.php");
+?>
+</head>
+
+<body>
+
+<div id="menu">
+<!--It used that the menu was made up of over 60 lines of code.. Now it's 6 lines of code. It isn't that easier for new pages-->
+<?php
+include("../includes/menu.html");
+?>
+</div>
+
+<div id="content">
+
+<H1>Chantal's Profile/<span lang="cy">Proffeil Chantal</span></H1>
+
+<p><b>Name/<span lang="cy">Enw</span>:</b>&nbsp;Chantal Patton
+<br>
+<b>Location/<span lang="cy">LLe:</span></b>&nbsp;UK
+<br>
+<b>Website/<span lang="cy">Gwe safle:</span></b>&nbsp;<a class="normal" target="_blank" href="http://www.angelfire.com/music/newbonhomie/">New Bonhomie</a>
+<br>
+<b>E-mail/<span lang="cy">E-bost:</span></b>&nbsp;
+<br>
+<b>Where did you first heard about <span lang="cy">Cyrff</span>?/<span lang="cy">LLe naethoch chi cyntaf wedi clywed am Y Cyrff?</span></b>&nbsp;Heard about them through Catatonia naturally. Was interested in hearing a band fronted by Mark. 
+<br>
+<b>Favourite <span lang="cy">Cyrff</span> song/<span lang="cy">Hoff g&acirc;n Cyrff:</span></b>&nbsp;Either <span lang="cy">Cymru, Lloegr a Llanrwst</span> or Llawenydd Heb Ddiwedd
+<br>
+<b>Favorite <span lang="cy">Cyrff</span> album/<span lang="cy">Hoff albwn Cyrff:</span></b>&nbsp;I<span lang="cy">Mae Ddoe Yn Ddoe</span> 
+<br>
+<b>Other comments/<span lang="cy">Eraill sywl:</span></b>&nbsp;Meh, I'm rubbish at thinking of these things.
+</p>
+
+<?php
+
+$internal = array ('http://christine.ycyrffgroupie.co.uk/profiles/profile.html',
+		'http://www.ycyrffgroupie.co.uk/profiles/profile.html',
+		'http://dev.ycyrffgroupie.co.uk/profiles/profile.html');
+if (in_array($_SERVER[HTTP_REFERER],$internal)){
+?>
+<p><img src="../images/site/back.jpg" width="156" height="44" alt="Back/Yn ol" onClick="history.back()"></p>
+<?php
+}else{
+?>
+<p>
+<a href="/profiles/profile.html"><img src="../images/site/back.jpg" width="156" height="44" alt="Back/Yn ol"></a>
+</p>
+<?php
+}
+?>
+
+</div>
+
+<div style="clear: both;">
+</div>
+<?php include("../includes/footer.php");?>
+
+</body>
+
+</html>

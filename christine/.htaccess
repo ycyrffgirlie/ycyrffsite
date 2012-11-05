@@ -1,0 +1,15 @@
+AuthType Basic
+AuthName "christine"
+AuthUserFile "/home/ycyrf718/.htpasswds/public_html/christine/passwd"
+require valid-user
+
+AddHandler application/x-httpd-php5 .html .htm
+
+#AddHandle application/x-httpd-php .html .htm
+
+#<Files *.html> 
+#RemoveHandler .html
+#RemoveType .html
+#AddHandler application/x-httpd-php .html
+#ForceType application/x-httpd-php
+#</Files>

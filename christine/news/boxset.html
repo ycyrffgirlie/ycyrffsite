@@ -1,0 +1,67 @@
+<?php
+include("../includes/header.php");
+?>
+</head>
+
+<body>
+
+<div id="menu">
+<!--It used that the menu was made up of over 60 lines of code.. Now it's 6 lines of code. It isn't that easier for new pages-->
+<?php
+include("../includes/menu.html");
+?>
+</div>
+
+<div id="content">
+<p>The new Box set is called <span lang="cy">Atalnod LLawn</span>. The complication should be out in September. It can be bought from the <a class="normal" target="_blank" href="http://www.sain.wales.com/english/sainshop/catalogue/rasal3.htm">Sain website</a>, some shops in Wales or it can be order by phoning Rasal on 01286 831111. It will cost £19.99. The tracklisting is:</p>
+
+<p><span class="underline">CD1</span>: <span lang="cy">Ansicrwydd, Y Cyfrifoldeb, Defnyddia Fi, Y Pleser, Fy Enaid Noeth, Y Deffro</span></p>
+
+<p><span class="underline">CD2</span>: <span lang="cy">Cymru, LLoegr a LLanrwst, Y Boddi, Cofia Fi Yn DDiolchgar, Cerdda Efo Fi Mewn Distawrwydd</span></p>
+
+<p><span class="underline">CD3</span>: <span lang="cy">Seibiant, Colofn, Beddargraff, Merch Sy Byth Yn Gwenu, Cwrdd, Colli Er Mwyn Ennill, Euog, Nunlle, Hadau'r Dychymg, Crafanc, Dyn Heb Gyllell, LLawenydd Heb DDiwedd, Eithaf</span></p>
+
+<p><span class="underline">CD4</span>: <span lang="cy">Anwybyddwch Ni, Yr Haint, Ar Goll, Pum Munud, Trwy'r Cymylau, Hwyl Fawr Heulwen, Pethau Achlysurol, Crafanc, Mewn Plu, Cadwyni, HTV/BBC, Hadau'r Dychymy, </span>Suck,<span lang="cy"> Hwyl Fawr Heulwen (live), Fy Enaid Noeth/Anadl</span> (live) <!--Tracklisting is done this way as it doesn't makes it a long page--> </p>
+
+<p><img src="../images/rasal12.jpg" alt="Atalnod LLawn"></p>
+
+<p><span lang="cy">Mae'r newydd Box Set yn galw Atalnod LLawn. Dylai e fod allan yn Medi. Medr e fod prynu o we safle Sain, rhoi siop yng NGHymru neu  medr e fod archebu &acirc; ffoniodd Rasal ar 01286 831111. Bydd y CD yn costio £19.99. Mae rhestr o trac:</span></p>
+
+<p><span class="underline" lang="cy">CD1</span>: <span lang="cy">Ansicrwydd, Y Cyfrifoldeb, Defnyddia Fi, Y Pleser, Fy Enaid Noeth, Y Deffro</span></p>
+
+<p><span class="underline" lang="cy">CD:2</span>:<span lang="cy">Cymru, LLoegr a LLanrwst, Y Boddi, Cofia Fi Yn DDiolchgar, Cerdda Efo Fi Mewn Distawrwydd</span></p>
+
+<p><span class="underline" lang="cy">CD3</span>: <span lang="cy">Seibiant, Colofn, Beddargraff, Merch Sy Byth Yn Gwenu, Cwrdd, Colli Er Mwyn Ennill, Euog, Nunlle, Hadau'r Dychymg, Crafanc, Dyn Heb Gyllell, LLawenydd Heb DDiwedd, Eithaf</span></p>
+
+<p><span class="underline" lang="cy">CD4</span>: <span lang="cy">Anwybyddwch Ni, Yr Haint, Ar Goll, Pum Munud, Trwy'r Cymylau, Hwyl Fawr Heulwen, Pethau Achlysurol, Crafanc, Mewn Plu, Cadwyni, HTV/BBC, Hadau'r Dychymy, Suck, Hwyl Fawr Heulwen (byw), Fy Enaid Noeth/Anadl (byw)</span></p>
+
+<?php
+
+$internal = array ('http://christine.ycyrffgroupie.co.uk/news/index.html',
+		'http://christine.ycyrffgroupie.co.uk/news/',
+		'http://www.ycyrffgroupie.co.uk/news/index.html',
+		'http://www.ycyrffgroupie.co.uk/news/',
+		'http://dev.ycyrffgroupie.co.uk/news/index.html',
+		'http://dev.ycyrffgroupie.co.uk/news/');
+if (in_array($_SERVER[HTTP_REFERER],$internal)){
+?>
+<p><img src="../images/site/back.jpg" width="156" height="44" alt="Back/Yn ol" onClick="history.back()"></p>
+<?php
+}else{
+?>
+<p>
+<a href="/news"><img src="../images/site/back.jpg" width="156" height="44" alt="Back/Yn ol"></a>
+</p>
+<?php
+}
+?>
+
+</div>
+
+<div style="clear: both;">
+</div>
+<?php include("../includes/footer.php");?>
+
+</body>
+
+</html>

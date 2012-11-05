@@ -1,0 +1,60 @@
+<?php
+include("../includes/header.php");
+?>
+</head>
+
+<body>
+
+<div id="menu">
+<!--It used that the menu was made up of over 60 lines of code.. Now it's 6 lines of code. It isn't that easier for new pages-->
+<?php
+include("../includes/menu.html");
+?>
+</div>
+
+<div id="content"><H1>LLewelyn Richards Profile/<span lang="cy">Proffeil LLewelyn Richard</span></H1>
+
+<p>Name/<span lang="cy">Enw:</span></b>&nbsp;LLewelyn Richards
+<br>
+<b>Location/<span lang="cy">LLe:</span></b>&nbsp;Caerdydd  
+<br>
+<b>Website/<span lang="cy">Gwe safle:</span></b>&nbsp;
+<br>
+<b>E-mail/<span lang="cy">E-bost:</span></b>&nbsp;
+<br>
+<b>Where first heard about Cyrff?/<span lang="cy">LLe naethoch chi cyntaf wedi clywed am Y Cyrff?</span></b>&nbsp;Record fy chwaer yng nghanol yr 80au
+<br>
+<b>Favourite Cyrff song/<span lang="cy">Hoff g&acirc;n Cyrff:</span></b>&nbsp;Hadau'r Dychymyg/ Cofia Fi'n DDiolchgar/ Hwyl Fawr Heulwen
+<br>
+<b>Favorite Cyrff album/<span lang="cy">Hoff albwn Cyrff:</span></b>&nbsp;Damwain Mewn FFatri Cyllyll a FFyrc
+<br>
+<b>Other comments/<span lang="cy">Eraill sywl:</span></b>&nbsp;
+</p>
+
+<?php
+
+$internal = array ('http://christine.ycyrffgroupie.co.uk/profiles/profile.html',
+		'http://www.ycyrffgroupie.co.uk/profiles/profile.html',
+		'http://dev.ycyrffgroupie.co.uk/profiles/profile.html');
+if (in_array($_SERVER[HTTP_REFERER],$internal)){
+?>
+<p><img src="../images/site/back.jpg" width="156" height="44" alt="Back/Yn ol" onClick="history.back()"></p>
+<?php
+}else{
+?>
+<p>
+<a href="/profiles/profile.html"><img src="../images/site/back.jpg" width="156" height="44" alt="Back/Yn ol"></a>
+</p>
+<?php
+}
+?>
+
+</div>
+
+<div style="clear: both;">
+</div>
+<?php include("../includes/footer.php");?>
+
+</body>
+
+</html>

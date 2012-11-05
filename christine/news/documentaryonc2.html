@@ -1,0 +1,54 @@
+<?php
+include("../includes/header.php");
+?>
+</head>
+
+<body>
+
+<div id="menu">
+<!--It used that the menu was made up of over 60 lines of code.. Now it's 6 lines of code. It isn't that easier for new pages-->
+<?php
+include("../includes/menu.html");
+?>
+</div>
+
+<div id="content">
+
+<H1>Documentary on C2</H1>
+
+<p>Sorry for the delay with this but some exciting news for you all. This is a late Christmas present. If you tune in to Radio <span lang="cy">Cymru</span>'s C2 on Thursday at 10 p.m, then you will find there is a documentary about <span lang="cy">Y Cyrff</span> on. It saids that Paul and Mark will be guests.</p>
+
+<H1><span lang="cy">Rhaglen ar C2</span></H1>
+
+<p><span lang="cy">Sori i'r oediad efo hyn ond rhyw newydd cyffrous i chi. Maen hyn yn Nadolig anrheg hywr. Os gwrando chi i Radio Cymru C2 nos Iau am ddeg o'gloch wedyn byddwych chi ffeindio rhaglen am Y Cyrff. Bydd Paul a Mark gwesteion.</span></p>
+
+<?php
+
+$internal = array ('http://christine.ycyrffgroupie.co.uk/news/index.html',
+		'http://christine.ycyrffgroupie.co.uk/news/',
+		'http://www.ycyrffgroupie.co.uk/news/index.html',
+		'http://www.ycyrffgroupie.co.uk/news/',
+		'http://dev.ycyrffgroupie.co.uk/news/index.html',
+		'http://dev.ycyrffgroupie.co.uk/news/');
+if (in_array($_SERVER[HTTP_REFERER],$internal)){
+?>
+<p><img src="../images/site/back.jpg" width="156" height="44" alt="Back/Yn ol" onClick="history.back()"></p>
+<?php
+}else{
+?>
+<p>
+<a href="/news"><img src="../images/site/back.jpg" width="156" height="44" alt="Back/Yn ol"></a>
+</p>
+<?php
+}
+?>
+
+</div>
+
+<div style="clear: both;">
+</div>
+<?php include("../includes/footer.php");?>
+
+</body>
+
+</html>

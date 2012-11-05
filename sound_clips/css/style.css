@@ -1,0 +1,221 @@
+
+Body{
+Background-color: #800080;
+Scrollbar-face-color: #800080;
+scrollbar-shadow-color: #8531B0;
+scrollbar-highlight-color: #FFD700;
+}
+
+p{ 
+background-color: #800080;
+font-family: Times New Roman, Courier, Arial, Verdana, serif,  sans-serif;
+color: #ffd700; 
+white-space: normal;
+}
+
+font{ 
+background-color: #800080;
+font-family: Times New Roman, Courier, Arial, Verdana, serif,  sans-serif;
+color: #ffd700; 
+white-space: normal;
+}
+
+blockquote{ 
+background-color: #800080;
+font-family: Times New Roman, Courier, Arial, Verdana, serif,  sans-serif;
+color: #ffd700; 
+white-space: normal;
+}
+
+A.normal:visited{
+background-color: #800080;
+color: #ffd700;
+text-align: center;
+white-space: normal;
+}
+
+A.normal:unvisited{
+background-color: #800080;
+color: #ffd700;
+text-align: center;
+white-space: normal;
+}
+
+A.normal:link{
+background-color: #800080;
+color: #ffd700;
+text-align: center;
+white-space: normal;
+}
+
+A.pic:visited{
+background-color: #800080;
+color: #800080;
+}
+
+A.pic:unvisited{
+background-color: #800080;
+color: #800080;
+}
+
+A.pic:link{
+background-color: #800080;
+color: #800080;
+}
+
+ul.normal{
+background-color: #800080;
+color: #ffd700;
+text-align: center;
+}
+
+#menu{
+float:left;
+position: relative;
+width: 20%;
+display: block;
+ 
+}
+
+
+ul.menu, ul.menu ul 
+{
+  width: 140px;
+border: 1px solid #ffffff;      
+    background-color: #ffffff;
+  color: #800080;
+  padding-left: 0px;
+  margin-left: 0px;
+}
+
+ul.menu li 
+{
+  list-style-type: none;
+  margin: 0px;
+position: relative;
+  color: #800080;
+}
+
+ul.menu li > ul 
+{          /* using the > selector prevents many lesser browsers (and IE - see below) hiding child ULs */
+  display: none;               /* hides child menu blocks - one of the most important declarations */
+  position: absolute;          /* make child blocks hover without leaving space for them */
+  top: 0px;                    /* position slightly lower than the parent menu item */
+  left: 141px;                  /* this must not be more than the width of the parent block, or the mouse will
+                                  have to move off the element to move between blocks, and the menu will close */
+}
+
+
+
+ul.menu li:hover, ul.menu li.CSStoHighlight 
+{
+  background-color: #800080;
+  color: #ffffff;
+}
+
+ul.menu ul.CSStoShow 
+{
+  display: block; 
+}
+
+ul.menu li:hover > ul 
+{
+ display: block;
+}
+
+ul.menu li a 
+{ 
+ color: #800080;
+ display: block;
+ width: 100%;
+ text-decoration: none;
+}
+ul.menu li a:hover, ul.menu li a.CSStoHighLink { 
+color: #ffffff; 
+}
+ul.menu li:hover > a { color: ffffff; }
+
+
+#content{
+position: relative;
+width: 69%;
+/**height: 99%; 680px;**/
+float: right;
+/**margin-left: 25px;**/
+}
+
+#left{
+padding-top: 20px;
+}
+
+
+H1{
+font-family:Times New Roman, Courier, Arial, Verdana, serif, sans-serif;
+background-color: #800080;
+color: #ffd700; 
+text-align: center;
+white-space: normal;
+}
+
+H2{
+font-family: Times New Roman, Courier, Arial, Verdana, serif, sans-serif;
+background-color: #800080;
+color: #ffd700; 
+text-align: center;
+white-space: normal;
+}
+
+H3{
+font-family: Times New Roman, Courier, Arial, Verdana, serif, sans-serif;
+background-color: #800080;
+color: #ffd700; 
+text-align: center;
+white-space: normal;
+}
+
+H4{
+font-family: Times New Roman, Courier, Arial, Verdana, serif, sans-serif;
+background-color: #800080;
+color: #ffd700; 
+text-align: center;
+white-space: normal;
+}
+
+H5{
+font-family: Times New Roman, Courier, Arial, Verdana, serif, sans-serif;
+background-color: #800080;
+color: #ffd700; 
+/**text-align: center;
+white-space: normal;
+}
+
+H6{
+font-family: Times New Roman, Courier, Arial, Verdana, serif, serif; sans-serif;
+background-color: #800080;
+color: #ffd700; 
+text-align: center;
+white-space: normal;
+}
+
+H7{
+font-family: Times New Roman, Courier, Arial, Verdana, serif, sans-serif;
+background-color: #800080;
+color: #ffd700; 
+text-align: center;
+white-space: normal;
+}
+
+img.normal{
+border: 1px, #ffffff;
+}
+
+table{
+text-align:center;
+border:none;
+}
+
+td{
+font-color: #ffd700;
+font-family: Times New Roman, Courier, Arial, Verdana, serif, sans-serif;
+background-color: #800080;
+}

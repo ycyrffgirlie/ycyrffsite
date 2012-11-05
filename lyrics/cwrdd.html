@@ -1,0 +1,138 @@
+<?php
+include("../includes/header.php");
+?>
+</head>
+
+<body>
+
+<div id="menu">
+<!--It used that the menu was made up of over 60 lines of code.. Now it's 6 lines of code. It isn't that easier for new pages-->
+<?php
+include("../includes/menu.html");
+?>
+</div>
+
+<div id="content">
+<H1><span lang="cy">Cwrdd</span></H1>
+
+<p><span lang="cy">A nawr genai mond y coed
+<br>
+Fel cyfeillion
+<br>
+Yn dawnsio o flean fy llygaid
+<br>
+Fel ysbrydion</span></p>
+
+
+<p><span lang="cy">A dwi di gorffen teimlo fel brenin
+<br>
+Ond mae'r drws 'ma dal yn agored
+<br>
+A ers i'r franhines adael
+<br>
+Hoffwn eistedd yn dy boced</span></p>
+
+<p><span lang="cy">Y sylfaen
+<br>
+Y teimlad
+<br>
+mor syml, mor onest
+<br>
+Yr amser a dreuliwyd
+<br>
+Y celwydd a rhoddest
+<br>
+Pod tro ti'n gadael fi lawr
+<br>
+Plis cwrdd a fi</span></p>
+
+<p><span lang="cy">Y sylfaen
+<br>
+Y teimlad
+<br>
+mor syml, mor onest
+<br>
+Yr amser a dreuliwyd
+<br>
+Y celwydd a rhoddest
+<br>
+Pob tro ti'n gadael fi lawr
+<br>
+Plis cwrdd a fi
+</span></p>
+
+<p class="underline">Translation</p>
+
+<p>And now I have only the trees
+<br>
+Like friends
+<br>
+Dancing in front of my eyes
+<br>
+Like ghosts</p>
+
+
+<p>And I've stop feeling like a king
+<br>
+But this door is still open
+<br>
+And since the queen left
+<br>
+I would like to sit in your pocket</p>
+
+<p>The foundation
+<br>
+The feeling
+<br>
+So simple, so honest
+<br>
+The time that was spend
+<br>
+The lie that was given
+<br>
+Every time you let me down
+<br>
+Please meet me</p>
+
+<p>The foundation
+<br>
+The feeling
+<br>
+So simple, so honest
+<br>
+The time that was spend
+<br>
+The lie that was given
+<br>
+Every time you let me down
+<br>
+Please meet me</p>
+
+<?php
+
+$internal = array ('http://christine.ycyrffgroupie.co.uk/lyrics/index.html',
+		'http://christine.ycyrffgroupie.co.uk/lyrics/',
+		'http://www.ycyrffgroupie.co.uk/lyrics/index.html',
+		'http://www.ycyrffgroupie.co.uk/lyrics/',
+		'http://dev.ycyrffgroupie.co.uk/lyrics/index.html',
+		'http://dev.ycyrffgroupie.co.uk/lyrics/');
+if (in_array($_SERVER[HTTP_REFERER],$internal)){
+?>
+<p><img src="../images/site/back.jpg" width="156" height="44" alt="Back/Yn ol" onClick="history.back()"></p>
+<?php
+}else{
+?>
+<a href="/lyrics"><img src="../images/site/back.jpg" width="156" height="44" alt="Back/Yn ol"></a>
+<?php
+}
+?>
+
+</div>
+
+<div style="clear: both;">
+</div>
+<?php include("../includes/footer.php");?>
+
+</body>
+
+</html>

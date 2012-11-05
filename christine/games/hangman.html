@@ -1,0 +1,297 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+<title>Hangman</title>
+<meta name="KEYWORD" content="Y Cyrff, Y Cyrff hangman">
+<meta name="DESCRIPTION" content="One of the only website about Y Cyrff. 
+Un o y unig we safle am Y Cyrff.">
+<?php
+include("../includes/header.php");
+?>
+
+<body>
+
+<div id="menu">
+<!--It used that the menu was made up of over 60 lines of code.. Now it's 6 lines of code. It isn't that easier for new pages-->
+<?php
+include("../includes/menu.html");
+?>
+</div>
+
+<div id="content">
+<table border="8" bgcolor="white" width="80%" cellspacing="0" align="center">
+<tr>
+	<td align="center">
+	<h2>Hangman!</h2><br>
+	<h3><b>Topic: <span lang="cy">Y Cyrff</span></b></h3>
+	<hr>
+	<br>
+	<center><font><script language="JavaScript" type="text/javascript">
+
+	<!-- Original:  Christine Black -->
+
+
+	<!-- Begin
+	function getCookie (name) {
+	var dcookie = document.cookie;
+	var cname = name + "=";
+	var clen = dcookie.length;
+	var cbegin = 0;
+	while (cbegin < clen) {
+	var vbegin = cbegin + cname.length;
+	if (dcookie.substring(cbegin, vbegin) == cname) {
+	var vend = dcookie.indexOf (";", vbegin);
+	if (vend == -1) vend = clen;
+	return unescape(dcookie.substring(vbegin, vend));
+	}
+	cbegin = dcookie.indexOf(" ", cbegin) + 1;
+	if (cbegin == 0) break;
+	}
+	return null;
+	}
+	function setCookie (name, value, expires) {
+	if (!expires) expires = new Date();
+	document.cookie = name + "=" + escape (value) + "; expires=" + expires.toGMTString() +  "; path=/";
+	}
+	function delCookie (name) {
+	var expireNow = new Date();
+	document.cookie = name + "=" + "; expires=Thu, 01-Jan-70 00:00:01 GMT" +  "; path=/";
+	}
+	var Alphabet = new initAlphaArray()
+	var NumOfWords = 50;
+	var SaveData = "";
+	var ImageNum = "";
+	var LettersSelected = "";
+	var RandomWord = "";
+	var DisplayWord = "";
+	var position = 0;
+	var word = new WordList();
+	var expdate = new Date();
+	var RandomNumber = (expdate.getSeconds())%NumOfWords;
+	function initAlphaArray() {
+	this.length = 25
+	this[0] = "A"
+	this[1] = "B"
+	this[2] = "C"
+	this[3] = "D"
+	this[4] = "E"
+	this[5] = "F"
+	this[6] = "G"
+	this[7] = "H"
+	this[8] = "I"
+	this[9] = "J"
+	this[10] = "K"
+	this[11] = "L"
+	this[12] = "M"
+	this[13] = "N"
+	this[14] = "O"
+	this[15] = "P"
+	this[16] = "Q"
+	this[17] = "R"
+	this[18] = "S"
+	this[19] = "T"
+	this[20] = "U"
+	this[21] = "V"
+	this[22] = "W"
+	this[23] = "X"
+	this[24] = "Y"
+	this[25] = "Z"
+	}
+function WordList() {
+this.length = NumOfWords;
+this[0] = "Y CYRFF";
+this[1] = "MARK ROBERTS";
+this[2] = "PAUL JONES";
+this[3] = "BARRY CAWLEY";
+this[4] = "DYLAN HUGES";
+this[5] = "MARK KENDALL";
+this[6] = "ANSICRWYDD";
+this[7] = "CYMRU LLOEGR A LLANRWST";
+this[8] = "BEDDARGRAFF";
+this[9] = "Y BODDI";
+this[10] = "Y CYFRIFOLDEB";
+this[11] = "PUM MUNUD";
+this[12] = "YR HAINT";
+this[13] = "CADWYNI";
+this[14] = "TRWY R CYMYLAU";
+this[15] = "HTV BBC";
+this[16] = "Y PLESER";
+this[17] = "Y DEFFRO";
+this[18] = "EITHAF";
+this[19] = "COFIA FI YN DDIOLCHGAR";
+this[20] = "DEFNYDDIA FI";
+this[21] = "CERDDA EFO FI MEWN DISTAWRWYDD";
+this[22] = "COLLI ER MWYN ENNILL";
+this[23] = "WEITHIAU ANADL";
+this[24] = "PETHAU ACHLYSUROL";
+this[25] = "LLAWENYDD HEB DDIWEDD";
+this[26] = "MEWN PLU";
+this[27] = "HWYL FAWR HEULWEN";
+this[28] = "MAE DDOE YN DDOE";
+this[29] = "SEIBIANT";
+this[30] = "COLOFN";
+this[31] = "MERCH SY BYTH YN GWENU";
+this[32] = "CWRDD";
+this[33] = "EUOG";
+this[34] = "NUNLLE";
+this[35] = "HADAU R DYCHYMYG";
+this[36] = "CRAFANC";
+this[37] = "DYN HEB GYLLELL";
+this[38] = "TIC TOC";
+this[39] = "LEBANON";
+this[40] = "UNIG";
+this[41] = "BRADWYR CYMRAEG";
+this[42] = "FY ENAID NOETH";
+this[43] = "HUNANLADDIAD";
+this[44] = "ANWYBYDDWCH NI";
+this[45] = "DAMWAIN MEWN FFATRI CYLLYLL A FFYRC";
+this[46] = "AR GOLL";
+this[47] = "TI N GWYBOD BE DWI N LICIO";
+this[48] = "UNIGWRYDD";
+this[49] = "RHYWBETH TEULUOL";
+this[50] = "ROCKABILLY";
+}
+	function availableLetters(i) {
+	if (LettersSelected.charAt(i)==Alphabet[i])
+	document.write('<TD ALIGN=CENTER VALIGN=CENTER WIDTH=20 HEIGHT=12>' +
+	'<B><A class="normal" HREF="javascript:LoadNextPage('+i+',\''+Alphabet[i]+
+	'\')">'+Alphabet[i]+'<\/A><\/B><\/TD>');
+	else
+	document.write('<TD ALIGN="CENTER" VALIGN="middle" WIDTH="20" HEIGHT="12"> </TD>');
+	}
+	function LoadNextPage(selected,letter) {
+	var j=0;
+	var HoldLettersSelected = LettersSelected;
+	LettersSelected = "";
+	if (selected == 0) {
+	for (j=1; j<=25; j++) {
+	LettersSelected += HoldLettersSelected.charAt(j);
+	}
+	LettersSelected = "^" + LettersSelected;
+	}
+	else if (selected == 25) {
+	for (j=0; j<=24; j++) {
+	LettersSelected += HoldLettersSelected.charAt(j);
+	}
+	LettersSelected += "^";
+	}
+	else {
+	for (j=0; j<selected; j++)
+	{
+	LettersSelected += HoldLettersSelected.charAt(j);
+	}
+	LettersSelected += "^";
+	for (j=selected+1; j<=25; j++) {
+	LettersSelected += HoldLettersSelected.charAt(j);
+   		}
+	}
+
+
+	SaveData = ImageNum + LettersSelected + RandomWord + "*";
+	setCookie("_HangMan", SaveData, expdate);
+	history.go(0);
+	}
+
+	// Sets a cookie that will expire in 10 days
+
+	expdate.setTime (expdate.getTime() + (1000*60*60*24*10));
+	if(getCookie("_HangMan") == null)
+	{
+	ImageNum = "A";
+	LettersSelected = "ABCDEFGHIJKLMNOPQRSTUVWXYZ,'/";
+	RandomWord = word[RandomNumber];
+	SaveData = ImageNum + LettersSelected + RandomWord + "*";
+	setCookie("_HangMan", SaveData, expdate);
+	}
+	else {
+	SaveData = getCookie("_HangMan");
+	ImageNum = SaveData.charAt(0);
+	for (position=1; position<=26; position++) {
+	LettersSelected += SaveData.charAt(position);
+	}
+	for (position=27; position<SaveData.indexOf("*"); position++) {
+	RandomWord += SaveData.charAt(position);
+	   }
+	}
+	DisplayWord = "";
+	for (i=0; i<RandomWord.length; i++) {
+	if (RandomWord.charAt(i) == ' ') {
+	DisplayWord += " "; 
+	}
+	else {
+	MatchFound = false;
+	for (j=0; j<=28; j++) {
+	if ((LettersSelected.charAt(j) == "^") && (RandomWord.charAt(i) == Alphabet[j])) {
+	DisplayWord += RandomWord.charAt(i);
+	MatchFound = true;
+   		}
+	}
+	if (!MatchFound) DisplayWord += "-";
+   		}
+	}
+	if (ImageNum == "J") {
+	document.write('<font color=red size=4>You Lost!<br>Answer:  "' + RandomWord + '"</font>');
+	}
+	else if (RandomWord == DisplayWord) {
+	document.write('<font color="red" size="8">You Win!</font>');
+	}
+	else {
+	document.write('<table>');
+	document.write('</tr>');
+	for (i=0; i<13; i++) availableLetters(i);
+	document.write('</tr>');
+	document.write('<tr>');
+	for (i=13; i<26; i++) availableLetters(i);
+	document.write('</tr>');
+	document.write('</table>');
+	}
+	document.write('<br>');
+	document.write('<br>');
+	document.write('<p></tt>');
+	document.write(DisplayWord);
+	document.write('</tt><\/p>');
+document.write('<form action="none">');
+document.write('<input type="button" VALUE="New Game"'+
+'onClick="delCookie(\'_HangMan\');history.go(0);">');
+document.write('</form>');
+document.write('</center>');
+// End -->
+</script>
+</font>
+</center>
+</td>
+</tr>
+</table>
+
+<?php
+
+$internal = array ('http://christine.ycyrffgroupie.co.uk/gamess/index.html',
+		'http://christine.ycyrffgroupie.co.uk/games/',
+		'http://www.ycyrffgroupie.co.uk/games/index.html',
+		'http://www.ycyrffgroupie.co.uk/games/',
+		'http://dev.ycyrffgroupie.co.uk/games/index.html',
+		'http://dev.ycyrffgroupie.co.uk/games/');
+if (in_array($_SERVER[HTTP_REFERER],$internal)){
+?>
+<p><img src="../images/site/back.jpg" width="156" height="44" alt="Back/Yn ol" onClick="history.back()"></p>
+<?php
+}else{
+?>
+<p>
+<a href="/games"><img src="../images/site/back.jpg" width="156" height="44" alt="Back/Yn ol"></a>
+</p>
+<?php
+}
+?>
+
+</div>
+
+<div style="clear: both;">
+</div>
+<?php include("../includes/footer.php");?>
+
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<?php
+include("../includes/header.php");
+?>
+</head>
+
+<body>
+
+<div id="menu">
+<!--It used that the menu was made up of over 60 lines of code.. Now it's 6 lines of code. It isn't that easier for new pages-->
+<?php
+include("../includes/menu.html");
+?>
+</div>
+
+<div id="content">
+<H1>Four-letter word that banned song</H1>
+
+<H3>By Deiniol Tegid</H3>
+
+<p>A punk band have had one of their songs banned from Welsh-language Radio Cymru because it contains a four-letter word.</p>
+
+<p>The tape, featuring Conwy Valley rock band <span lang="cy">Y Cyrff</span> was broadcast on the air on Saturday morning. </p>
+
+<p><font size="5"><b>Inquiry</b></font></p>
+
+<p>And singer Marc Roberts, who works in the family business as a butcher in LLanrwst, blames the BBC for the misunderstanding.</p>
+
+<p>&quot;The concert was recorded a year ago and has played on Radio Cymru once before.&quot; he said.</p>
+
+<p>&quot;It's the BBC's own fault. They should have listened to the tape before broadcasting it.&quot;</p>
+
+<p><span lang="cy">Y Cyrff</span> - voted Wales' top rock band in an HTV opinion poll - used the word during a concert in Aberystwyth a year ago which featured serveral punk and alternative groups.</p>
+
+<p>An immediate inquiry was launched after the programme, which resulted in the head of Radio Cymru, Mr Meirion Edwards, ordering the offencing tape to be destroyed.</p>
+
+<p>BBC Press officer Mr Gwyn Griffiths said: &quot;The tape had been played before but no-one had noticed the offending word then. But the tape certainly should not have been broadcast.&quot;</p>
+
+<p><img src="../images/cyrff17.jpg" width="592" height="400" alt="Y Cyrff">
+<br>
+<span lang="cy">Y Cyrff</span>: they blame the BBC for the controversy over the broadcasting of their song.</p>
+
+<?php
+
+$internal = array ('http://christine.ycyrffgroupie.co.uk/news/index.html',
+		'http://christine.ycyrffgroupie.co.uk/news/',
+		'http://www.ycyrffgroupie.co.uk/news/index.html',
+		'http://www.ycyrffgroupie.co.uk/news/',
+		'http://dev.ycyrffgroupie.co.uk/news/index.html',
+		'http://dev.ycyrffgroupie.co.uk/news/');
+if (in_array($_SERVER[HTTP_REFERER],$internal)){
+?>
+<p><img src="../images/site/back.jpg" width="156" height="44" alt="Back/Yn ol" onClick="history.back()"></p>
+<?php
+}else{
+?>
+<p>
+<a href="/news"><img src="../images/site/back.jpg" width="156" height="44" alt="Back/Yn ol"></a>
+</p>
+<?php
+}
+?>
+
+</div>
+
+<div style="clear: both;">
+</div>
+<?php include("../includes/footer.php");?>
+
+</body>
+
+</html>

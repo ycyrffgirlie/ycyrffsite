@@ -1,0 +1,55 @@
+<?php
+include("../includes/header.php");
+?>
+</head>
+
+<body>
+
+<div id="menu">
+<!--It used that the menu was made up of over 60 lines of code.. Now it's 6 lines of code. It isn't that easier for new pages-->
+<?php
+include("../includes/menu.html");
+?>
+</div>
+
+<div id="content">
+<H1>Y FFyrc Am Roi Proc Bach Arall</H1>
+<br>
+<H2>Non Tudur</H2>
+
+<p>Yn &ocirc;l y dyn a helpodd y grwp gwreiddiol i wneud ei farc, mae'r band newydd yn arbennig o dda. &quot;Mae yna felodis cry; iawn a geirie cry' iawn,&quot; meddai Toni Schiavone o ardal Llanrwst</p>
+
+<p>Mae'r cyfan, meddai, yn nodweddiadol o'r cyfansoddwr a'r canwr, Mark Roberts, a oedd hefyd yn un o aelodau amlyca' Catatonia.</p>
+
+<p>Mae'r Cyrff yn eu holau ... fel Y Ffyrc!, Golwg, Gorffennaf 29, tudalen 14</p><
+
+<?php
+
+$internal = array ('http://christine.ycyrffgroupie.co.uk/news/index.html',
+		'http://christine.ycyrffgroupie.co.uk/news/',
+		'http://www.ycyrffgroupie.co.uk/news/index.html',
+		'http://www.ycyrffgroupie.co.uk/news/',
+		'http://dev.ycyrffgroupie.co.uk/news/index.html',
+		'http://dev.ycyrffgroupie.co.uk/news/');
+if (in_array($_SERVER[HTTP_REFERER],$internal)){
+?>
+<p><img src="../images/site/back.jpg" width="156" height="44" alt="Back/Yn ol" onClick="history.back()"></p>
+<?php
+}else{
+?>
+<p>
+<a href="/news"><img src="../images/site/back.jpg" width="156" height="44" alt="Back/Yn ol"></a>
+</p>
+<?php
+}
+?>
+
+</div>
+
+<div style="clear: both;">
+</div>
+<?php include("../includes/footer.php");?>
+
+</body>
+
+</html>

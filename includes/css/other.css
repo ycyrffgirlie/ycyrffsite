@@ -1,0 +1,52 @@
+.zippy-content{
+margin: 0;
+overflow-x: hidden;
+overflow-y: hidden;
+padding: 0;
+}
+
+a.browser:visited{
+background-color: #800080;
+color: #ffd700;
+text-align: center;
+white-space: normal;
+}
+
+a.browser:unvisited{
+background-color: #800080;
+color: #ffd700;
+text-align: center;
+white-space: normal;
+}
+
+a.browser:link{
+background-color: #800080;
+color: #ffd700;
+text-align: center;
+white-space: normal;
+}
+
+#browser-container{
+
+}
+
+#browser-name{
+
+ 
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+p.browser{
+
+font-family: Times New Roman, Courier, Arial, Verdana, serif, sans-serif;
+background-color: #800080;
+color: #ffd700; 
+font-weight:bold;
+}
+p.browser:hover{
+background-color: #ffffff;
+color: #800080;
+}

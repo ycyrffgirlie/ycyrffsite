@@ -1,0 +1,127 @@
+<?php
+include("../includes/header.php");
+?>
+
+<body>
+<div id="menu">
+<!--It used that the menu was made up of over 60 lines of code.. Now it's 6 lines of code. It isn't that easier for new pages-->
+<?php
+include("../includes/menu.html");
+?>
+</div>
+
+
+<div id="content">
+<H1>How Obsessed Are You With <span lang="cy">Y Cyrff?</span></H1>
+
+<form name="cyrff" action="none">
+<p><input type="checkbox" name="a" value="ON">I visit this site every day to see if there is any news on <span lang="cy">Y Cyrff</span>
+<br>
+<input type="checkbox" name="b" value="ON"> I have at least ten <span lang="cy">Y Cyrff</span> sites bookmarked. (if you can found any more then let me know)
+<br> 
+<input type="checkbox" name="c" value="ON"> I made my own <span lang="cy">Y Cyrff</span> web site.
+<br>
+<input type="checkbox" name="d" value="ON"> My desktop picture is a picture of <span lang="cy">Y Cyrff</span>.
+<br>
+<input type="checkbox" name="e" value="ON"> My bedrooms are covered in <span lang="cy">Y Cyrff</span> posters.
+<br>
+<input type="checkbox" name="f" value="ON"> I own more than three <span lang="cy">Y Cyrff</span> records.
+<br>
+<input type="checkbox" name="g" value="ON"> I spend all day listening to <span lang="cy">Y Cyrff</span>.
+<br>
+<input type="checkbox" name="h" value="ON"> My favoutite song is a <span lang="cy">Y Cyrff</span> song.
+<br>
+<input type="checkbox" name="i" value="ON"> I think I see <span lang="cy">Y Cyrff</span> band members on the street.
+<br>
+<input type="checkbox" name="j" value="ON"> I wander through Wales looking for band members of <span lang="cy">Y Cyrff</span>.
+<br>
+<input type="checkbox" name="k" value="ON"> Moved to Wales to be near <span lang="cy">Y Cyrff</span> band members.
+<br>
+<input type="checkbox" name="l" value="ON"> For Halloween I dress like one of the band members of <span lang="cy">Y Cyrff</span>.<br>
+<br>
+<input type="checkbox" name="m" value="ON"> I have dreams about <span lang="cy">Y Cyrff</span>.
+<br>
+<input type="checkbox" name="n" value="ON"> I make up songs or poems about <span lang="cy">Y Cyrff</span>.
+<br>
+<input type="checkbox" name="o" value="ON"> Named my cat/dog <span lang="cy">Y Cyrff</span>.
+<br>
+<input type="checkbox" name="p" value="ON"> Named at least one child after one of the <span lang="cy">Y Cyrff</span> band members.
+<br>
+<input type="checkbox" name="q" value="ON"> I managed to convert people to become <span lang="cy">Y Cyrff</span> fans.
+<br>
+<input type="checkbox" name="r" value="ON"> I take quizes like this one.<br>
+<br>
+<input type="button" value="Click to tally" onClick="total();">
+<input type="text" name="mess" value="" size="30"><br>
+<input type="text" name="state" value="" size="30">
+</p>
+</form>
+
+
+<script language="JavaScript" type="text/javascript">
+document.cyrff.mess.value="";
+document.cyrff.mess.value="";
+function total()
+{
+var score=0;
+var level="% obsessed with Y Cyrff";
+var result=0;
+var statement="You may become obsessed"
+if (document.cyrff.a.checked==true) score=score+1;
+if (document.cyrff.b.checked==true) score=score+1;
+if (document.cyrff.c.checked==true) score=score+2;
+if (document.cyrff.d.checked==true) score=score+1;
+if (document.cyrff.e.checked==true) score=score+1;
+if (document.cyrff.f.checked==true) score=score+1;
+if (document.cyrff.g.checked==true) score=score+1;
+if (document.cyrff.h.checked==true) score=score+1;
+if (document.cyrff.i.checked==true) score=score+1;
+if (document.cyrff.j.checked==true) score=score+1;
+if (document.cyrff.k.checked==true) score=score+1;
+if (document.cyrff.l.checked==true) score=score+1;
+if (document.cyrff.m.checked==true) score=score+1;
+if (document.cyrff.n.checked==true) score=score+1;
+if (document.cyrff.o.checked==true) score=score+1;
+if (document.cyrff.p.checked==true) score=score+1;
+if (document.cyrff.q.checked==true) score=score+2;
+if (document.cyrff.r.checked==true) score=score+2;
+score=Math.round((score/18)*100);
+if (score<17) statement="You are NOT obsessed";
+if (score>74) statement="Wow, you are obsessed!";
+if (score>100) statement="Please get help";
+result=score+level;
+document.cyrff.mess.value=result;
+document.cyrff.state.value=statement;
+}
+</script>
+
+<?php
+
+$internal = array ('http://christine.ycyrffgroupie.co.uk/gamess/index.html',
+		'http://christine.ycyrffgroupie.co.uk/games/',
+		'http://www.ycyrffgroupie.co.uk/games/index.html',
+		'http://www.ycyrffgroupie.co.uk/games/',
+		'http://dev.ycyrffgroupie.co.uk/games/index.html',
+		'http://dev.ycyrffgroupie.co.uk/games/');
+if (in_array($_SERVER[HTTP_REFERER],$internal)){
+?>
+<p><img src="../images/site/back.jpg" width="156" height="44" alt="Back/Yn ol" onClick="history.back()"></p>
+<?php
+}else{
+?>
+<p>
+<a href="/games"><img src="../images/site/back.jpg" width="156" height="44" alt="Back/Yn ol"></a>
+</p>
+<?php
+}
+?>
+
+</div>
+
+<div style="clear: both;">
+</div>
+<?php include("../includes/footer.php");?>
+
+</body>
+
+</html>

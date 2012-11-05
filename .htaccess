@@ -1,0 +1,33 @@
+<Files *>
+order allow,deny
+allow from all
+deny from 50.112.31.207
+</Files>
+RewriteEngine on
+
+redirect 301 /profiles/submit_profile.html http://www.ycyrffgroupie.co.uk/profiles/submitprofile.php
+redirect 301 /profiles/submit_profile1.html http://www.ycyrffgroupie.co.uk/profiles/submitprofile.php
+redirect 301 /:,: http://www.ycyrffgroupie.co.uk
+redirect 301 /contact http://www.ycyrffgroupie.co.uk/contact.php
+redirect 301 /thank_you.html http://www.ycyrffgroupie.co.uk/thankyou.html
+redirect 301 /thank_you1.html http://www.ycyrffgroupie.co.uk/thankyou.html
+redirect 301 /interviews.html http://www.ycyrffgroupie.co.uk/interviews/index.html
+redirect 301 /aboutme.html http://www.ycyrffgroupie.co.uk/about_me.html
+redirect 301 /newguestbook.html http://www.ycyrffgroupie.co.uk/guestbook.html
+redirect 301 /profiles/submit_profile.php http://www.ycyrffgroupie.co.uk/profiles/submitprofile.php
+redirect 301 /images/site/back.jpg http://www.ycyrffgroupie.co.uk/Images/site/back.jpg
+redirect 301 /index1.html http://www.ycyrffgroupie.co.uk/index.html
+redirect 301 /quiz.html http://www.ycyrffgroupie.co.uk/games/quiz.html
+redirect 301 /quiz1.html http://www.ycyrffgroupie.co.uk/games/quiz.html
+redirect 301 /games1.html http://www.ycyrffgroupie.co.uk/games/index.html
+redirect 301 /brick_wall.html http://www.ycyrffgroupie.co.uk/games/brickwall.html
+redirect 301 /brick_wall1.html http://www.ycyrffgroupie.co.uk/games/brickwall.html
+redirect 301 /alcohol_test.html http://www.ycyrffgroupie.co.uk/games/alcoholtest.html
+redirect 301 /alcohol_test1.html http://www.ycyrffgroupie.co.uk/games/alcoholtest.html
+redirect 301 /profiles/christine_profile.html http://www.ycyrffgroupie.co.uk/profiles/christineprofile.html
+redirect 301 /profiles/luke_profile.html http://www.ycyrffgroupie.co.uk/profiles/lukeprofile.html
+redirect 301 /profiles/luke_profile1.html http://www.ycyrffgroupie.co.uk/profiles/lukeprofile.html
+
+
+RewriteCond %{HTTP_HOST} ^ycyrffgroupie\.co.uk$
+RewriteRule (.*) http://www.ycyrffgroupie.co.uk/$1 [R=301,L]

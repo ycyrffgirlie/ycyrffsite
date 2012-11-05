@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+<title>Chantal's Profile</title>
+<meta name="KEYWORD" content="Y Cyrff, Chantal Profile">
+<meta name="DESCRIPTION" content="One of the only website about Y Cyrff. 
+Un o y unig we safle am Y Cyrff.">
+<meta name="author" content="Christine Black">
+<meta name="generator" content="Notepad, Wordpad">
+<meta http-equiv="Content-Type" content="text/html; charset=Iso-8859-14">
+<meta name="rating" content="General">
+<link rel="shortcut icon" href="../Images/icon/cyrff.ico">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31457269-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+
+<div id="menu">
+<!--It used that the menu was made up of over 60 lines of code.. Now it's 6 lines of code. It isn't that easier for new pages-->
+<?php
+include("../includes/menu.html");
+?>
+</div>
+
+<div id="content">
+
+<H1>Chantal's Profile/<span lang="cy">Proffeil Chantal</span></H1>
+
+<p><b>Name/<span lang="cy">Enw</span>:</b>&nbsp;Chantal Patton
+<br>
+<b>Location/<span lang="cy">LLe:</span></b>&nbsp;UK
+<br>
+<b>Website/<span lang="cy">Gwe safle:</span></b>&nbsp;<a class="normal" target="_blank" href="http://www.angelfire.com/music/newbonhomie/">New Bonhomie</a>
+<br>
+<b>E-mail/<span lang="cy">E-bost:</span></b>&nbsp;
+<br>
+<b>Where did you first heard about <span lang="cy">Cyrff</span>?/<span lang="cy">LLe naethoch chi cyntaf wedi clywed am Y Cyrff?</span></b>&nbsp;Heard about them through Catatonia naturally. Was interested in hearing a band fronted by Mark. 
+<br>
+<b>Favourite <span lang="cy">Cyrff</span> song/<span lang="cy">Hoff g&acirc;n Cyrff:</span></b>&nbsp;Either <span lang="cy">Cymru, Lloegr a Llanrwst</span> or Llawenydd Heb Ddiwedd
+<br>
+<b>Favorite <span lang="cy">Cyrff</span> album/<span lang="cy">Hoff albwn Cyrff:</span></b>&nbsp;I<span lang="cy">Mae Ddoe Yn Ddoe</span> 
+<br>
+<b>Other comments/<span lang="cy">Eraill sywl:</span></b>&nbsp;Meh, I'm rubbish at thinking of these things.
+</p>
+
+<?php
+
+$internal = array ('http://christine.ycyrffgroupie.co.uk/profiles/profile.html',
+		'http://www.ycyrffgroupie.co.uk/profiles/profile.html',
+		'http://dev.ycyrffgroupie.co.uk/profiles/profile.html');
+if (in_array($_SERVER[HTTP_REFERER],$internal)){
+?>
+<p><img src="../images/site/back.jpg" width="156" height="44" alt="Back/Yn ol" onClick="history.back()"></p>
+<?php
+}else{
+?>
+<p>
+<a href="/profiles/profile.html"><img src="../images/site/back.jpg" width="156" height="44" alt="Back/Yn ol"></a>
+</p>
+<?php
+}
+?>
+
+</div>
+
+<div style="clear: both;">
+</div>
+<?php include("../includes/footer.php");?>
+
+</body>
+
+</html>

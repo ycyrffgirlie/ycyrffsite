@@ -1,0 +1,116 @@
+<?php
+include("../includes/header.php");
+?>
+</head>
+
+<body>
+
+<div id="menu">
+<!--It used that the menu was made up of over 60 lines of code.. Now it's 6 lines of code. It isn't that easier for new pages-->
+<?php
+include("../includes/menu.html");
+?>
+</div>
+
+
+<div id="content">
+<h1>Former Catatonia guitarist Mark Roberts returns with new project The Earth</h1>
+
+<img src="../images/interviews/markroberts.jpg" width="465" height="366" alt="Mark Roberts">
+
+<p>One of the most influential of Welsh musicians Mark Roberts has an enviable track record. As the former Catatonia guitarist embarks on a new project he tells Dave Owens why a proposed alternative career to music fell to pieces</p>
+
+<p>IT'S difficult not to overstate the importance of Mark Roberts' contribution to the Welsh music scene.</p>
+
+<p>As the frontman with hugely influential punk-pop outfit Y Cyrff he flew the flag for a vibrant Welsh language music scene that was at its height in the late 1980s alongside fellow trailblazers such as Ffa Coffi Pawb, Datblygu and Llwybr Llaethog.</p>
+
+<p>Then his much-loved band lay the foundation stones for what was to come - namely the rise of Cool Cymru and the advent of his all-conquering group Catatonia.</p>
+
+<p>Ironically, given that it was 20 years ago this year that he started writing songs with Catatonia singer Cerys Matthews, 2012 sees the musician at the heart of a new female-fronted outfit - The Earth.</p>
+
+<p>Formed with Super Furry Animals drummer Dafydd Ieaun, the group again sees Mark writing songs for a female muse, in the form of Dionne Bennett - last seen as backing singer with actor Rhys Ifans' group The Peth.</p>
+
+<p>It was a chance meeting that brought everyone together.</p>
+
+<p>"I bumped into Dafydd at his sister's birthday party and he asked what I was up to,"ù explains Mark.</p>
+
+<p>"I said I wasn't doing much, and he told me about this amazing girl singer who wanted to do her own album.</p>
+
+<p>"He asked if I'd like to get together to write.</p>
+
+<p>"I said yes, so we met up and on the first day we wrote one really good song and the next day we wrote another and it just came together naturally."ù</p>
+
+<p>And it sounds like they've hit a rich seam of songwriting form.</p>
+
+<p>"At the moment we're putting the finishing touches to the first album,"ù says Mark. "And we've got completed half of the next album as well."ù</p>
+
+<p>Recording has been taking place at Dafydd's Strangetown Records studio in Cardiff - a centre of collaborative excellence if recent output is any yardstick.</p>
+
+<p>The drummer-turned-producer's label caught the eye with his recent livewire project Wibidi and the debut album from Super Furry Animals' synth maestro Cian Ciaran also looks set for similar critical acclaim.</p>
+
+<p>"It's just a really creative environment, with some incredibly talented people,"ù confirms Mark.</p>
+
+<img src="../images/interviews/bwearlypromo.jpg" width="550" height="557" alt="Mark (far right) with Catatonia.">
+
+<p>Ask the 42-year-old musician, who is originally from Llanrwst in North Wales, to describe The Earth's sound and he's momentarily stuck.</p>
+
+<p>"That's always a difficult question,"ù he muses, before pausing and then answering with: "It's like soul music, but poppy, and there's an underlying psychedelic vibe.</p>
+
+<p>"It's something different from what I've done before I guess, but it's still pop music and I've always been a huge fan of pop music."ù</p>
+
+<p>As Catatonia's chief songwriter he was responsible for penning many of the band's big bold pop hits including Mulder and Scully, I Am The Mob and Road Rage, but after the band split he retreated from the spotlight.</p>
+
+<p>Save for two short-lived projects with former Y Cyrff / Catatonia bass player Paul Jones - Sherbet Antlers and Y Ffyrc - little has been heard from the influential musician in the past decade.</p>
+
+<p>So did he fall out of love with music?</p>
+
+<p>"I never fell out of love with music, I was just tired of jumping through hoops, having to indulge in the constant grind of touring and writing to deadlines,"ù he points out.</p>
+
+<p>When I quiz him over what he did in that intervening period, I'm met with a surprising response.</p>
+
+<p>"I had delusions of training as a chess grand master,"ù he states, matter-of-factly.</p>
+
+<p>His answer momentarily takes me aback, so I have to check I've heard this correctly.</p>
+
+<p>"It's true, I got obsessed with chess. I had ambitions that this could be a career that would pan out into old age, but ultimately I didn't get anywhere near the levels required. It was pure folly really."ù</p>
+
+<p>Thankfully, having had a reality check (mate) he's back doing what he's best at - writing and playing music.</p>
+
+<p>Now The Earth will take to the stage for only their second ever gig at Clwb Ifor Bach in Cardiff on Saturday.</p>
+
+<p>Their debut in the improbable surrounds of the recent Clytha Arms Cider Festival went well and Mark admits he's looking forward for this weekend's show, where his band will be supporting ever entertaining psych-pop whippersnappers Houdini Dax.</p>
+
+<p>"When you're in a studio you're never sure how people are going to react,"ù he confides.</p>
+
+<p>"Now I'm really excited to get the album finished and get the music out there."ù</p>
+
+<p>The Earth play with Houdini Dax and The Knox at Clwb Ifor Bach on Saturday. Tickets priced £5 from <a class="normal" target="ù_blank"ù href="ùhttp://www.clwb.net"ù>www.clwb.net</a>  For more info ring 029 2023 2199.</p>
+
+
+<?php
+//echo $_SERVER[HTTP_REFERER];
+
+$internal = array ('http://christine.ycyrffgroupie.co.uk/interviews/index.html',
+		'http://christine.ycyrffgroupie.co.uk/interviews/',
+		'http://www.ycyrffgroupie.co.uk/interviews/index.html',
+		'http://www.ycyrffgroupie.co.uk/interviews/',
+		'http://dev.ycyrffgroupie.co.uk/interviews/index.html',
+		'http://dev.ycyrffgroupie.co.uk/interviews/');
+if (in_array($_SERVER[HTTP_REFERER],$internal)){
+?>
+<p><img src="../images/site/back.jpg" width="156" height="44" alt="Back/Yn ol" onClick="history.back()"></p>
+<?php
+}else{
+?>
+<a href="/interviews"><img src="../images/site/back.jpg" width="156" height="44" alt="Back/Yn ol"></a>
+<?php
+}
+?>
+
+</div>
+
+<div style="clear: both;">
+</div>
+<?php include("../includes/footer.php");?>
+
+</body>

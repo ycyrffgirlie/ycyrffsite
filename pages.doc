@@ -1,0 +1,389 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html;charset=utf-8" />
+</head>
+<body><h1>Database ycyrf718_cyrff</h1><h2>Table structure for table pages</h2><table class="width100" cellspacing="1"><tr class="print-category"><th class="print">Column</th><td class="print"><b>Type</b></td><td class="print"><b>Null</b></td><td class="print"><b>Default</b></td></tr><tr class="print-category"><td class="print"><i><b>filename</b></i></td><td class="print">varchar(1000)</td><td class="print">No</td><td class="print"></td></tr><tr class="print-category"><td class="print">title</td><td class="print">varchar(1000)</td><td class="print">Yes</td><td class="print">NULL</td></tr><tr class="print-category"><td class="print">keywords</td><td class="print">varchar(1000)</td><td class="print">Yes</td><td class="print">NULL</td></tr><tr class="print-category"><td class="print">descriptionen</td><td class="print">varchar(1000)</td><td class="print">Yes</td><td class="print">NULL</td></tr><tr class="print-category"><td class="print">descriptioncymraeg</td><td class="print">varchar(1000)</td><td class="print">Yes</td><td class="print">NULL</td></tr><tr class="print-category"><td class="print">facebooktitle</td><td class="print">varchar(1000)</td><td class="print">Yes</td><td class="print">NULL</td></tr><tr class="print-category"><td class="print">facebookdescription</td><td class="print">varchar(1000)</td><td class="print">Yes</td><td class="print">NULL</td></tr><tr class="print-category"><td class="print">facebookimage</td><td class="print">varchar(1000)</td><td class="print">Yes</td><td class="print">NULL</td></tr><tr class="print-category"><td class="print">facebookurl</td><td class="print">varchar(1000)</td><td class="print">Yes</td><td class="print">NULL</td></tr><tr class="print-category"><td class="print">whatnewenglish</td><td class="print">varchar(1000)</td><td class="print">Yes</td><td class="print">NULL</td></tr><tr class="print-category"><td class="print">whatnewcymraeg</td><td class="print">varchar(1000)</td><td class="print">Yes</td><td class="print">NULL</td></tr><tr class="print-category"><td class="print">datelastmodified</td><td class="print">datetime</td><td class="print">Yes</td><td class="print">NULL</td></tr><tr class="print-category"><td class="print">htmlcode</td><td class="print">varchar(2500)</td><td class="print">No</td><td class="print"></td></tr></table><h2>Dumping data for table pages</h2><table class="width100" cellspacing="1"><tr class="print-category"><td class="print">/albums.html</td><td class="print">Albums/ Albwnau
+</td><td class="print">Y Cyrff, Y Cyrff Discography, Albums, Albwnau</td><td class="print">Y Cyrff's album discography.</td><td class="print">Discograffi albwm Y Cyrff.</td><td class="print">Albums/ Albwnau
+</td><td class="print">Y Cyrff's album discography. Discograffi albwm Y Cyrff.</td><td class="print">http://www.ycyrffgroupie.co.uk/images/rasal12.jpg</td><td class="print">NULL</td><td class="print">Added to the database</td><td class="print">NULL</td><td class="print">2012-08-18 21:27:24</td><td class="print">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/table.css&quot;&gt;</td></tr><tr class="print-category"><td class="print">/band.html</td><td class="print"></td><td class="print">Band landing page
+</td><td class="print">One of the only website about Y Cyrff.
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff.
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-30 18:22:22</td><td class="print"></td></tr><tr class="print-category"><td class="print">/compilations.html</td><td class="print">Compilations/ Amlgyfrannog
+</td><td class="print">Y Cyrff, Y Cyrff Discography</td><td class="print">Y Cyrff's complication discography..</td><td class="print">Discograffi amlgyfrannog Y Cyrff.</td><td class="print">Compilations/ Amlgyfrannog
+</td><td class="print">Y Cyrff's complication discography.  Discograffi amlgyfrannog Y Cyrff.</td><td class="print">http://www.ycyrffgroupie.co.uk/images/hwyl_fawr_heulwen.jpg</td><td class="print">NULL</td><td class="print">Added to the database</td><td class="print">NULL</td><td class="print">2012-08-18 21:27:24</td><td class="print">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/table.css&quot;&gt;</td></tr><tr class="print-category"><td class="print">/contact.php</td><td class="print"></td><td class="print">Y Cyrff, Contact me, Cysylltu a fi
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-15 21:46:10</td><td class="print"></td></tr><tr class="print-category"><td class="print">/discography.html</td><td class="print">Discography/Discograff
+</td><td class="print">Y Cyrff, Y Cyrff Discography, Discograff  Y Cyrff</td><td class="print">Y Cyrff's discography
+</td><td class="print">Discograffi'r Cyrff.</td><td class="print">Discography/Discograff
+</td><td class="print">Y Cyrff's discography. Discograffi'r Cyrff.</td><td class="print">http://www.ycyrffrgroupie.co.uk/images/title.JPG</td><td class="print">NULL</td><td class="print">Added to the database</td><td class="print">NULL</td><td class="print">2012-08-18 21:27:24</td><td class="print"></td></tr><tr class="print-category"><td class="print">/download.html</td><td class="print">Downloads/Lawrlwythi
+</td><td class="print">Y Cyrff, Y Cyrff download, Y Cyrff Lawrlwythi
+</td><td class="print">One of the only website about Y Cyrff.
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print">Downloads/Lawrlwythi
+</td><td class="print">One of the only website about Y Cyrff.
+</td><td class="print">http://www.ycyrffrgroupie.co.uk/images/title.JPG</td><td class="print">NULL</td><td class="print">Added to the database</td><td class="print">NULL</td><td class="print">2012-08-18 21:27:24</td><td class="print"></td></tr><tr class="print-category"><td class="print">/guestbook.html</td><td class="print"></td><td class="print"></td><td class="print"></td><td class="print">NULL</td><td class="print"></td><td class="print"></td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-05-05 14:13:52</td><td class="print"></td></tr><tr class="print-category"><td class="print">/index.html</td><td class="print">Y Cyrff</td><td class="print">Y Cyrff</td><td class="print">One of the only website about Y Cyrff.</td><td class="print">Un o'r unig we safle am Y Cyrff.</td><td class="print">Y Cyrff</td><td class="print">One of the only website about Y Cyrff. Un o'r unig we safle am Y Cyrff.</td><td class="print">http://www.ycyrffrgroupie.co.uk/images/title.JPG</td><td class="print">http://www.ycyrffgroupie.co.uk</td><td class="print">Added to the database</td><td class="print">NULL</td><td class="print">2012-08-18 21:27:25</td><td class="print">&lt;script type=&quot;text/javascript&quot;&gt;var switchTo5x=false;&lt;/script&gt; &lt;script type=&quot;text/javascript&quot; src=&quot;http://w.sharethis.com/button/buttons.js&quot;&gt;&lt;/script&gt; &lt;script type=&quot;text/javascript&quot;&gt;stLight.options({publisher: &quot;620950a8-f97c-45fb-a3d0-37ba22439251&quot;}); &lt;/script&gt;&lt;meta property=&quot;fb:admins&quot; content=&quot;595456413&quot; /&gt;</td></tr><tr class="print-category"><td class="print">/links.html</td><td class="print">Links/Cysyllitiadau
+</td><td class="print">Y Cyrff, links, Cysyllitiadau
+</td><td class="print">Y Cyrff related links.</td><td class="print">Y Cyrff sy'n gysylltiedig cysylltiadau.</td><td class="print">Links/Cysyllitiadau
+</td><td class="print">Y Cyrff related links.Y Cyrff sy'n gysylltiedig cysylltiadau.</td><td class="print">http://www.ycyrffrgroupie.co.uk/images/title.JPG</td><td class="print">NULL</td><td class="print">Added to the database</td><td class="print">NULL</td><td class="print">2012-08-18 21:27:22</td><td class="print"></td></tr><tr class="print-category"><td class="print">/me.html</td><td class="print"></td><td class="print">Me landing page
+</td><td class="print">One of the only website about Y Cyrff.
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff.
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-18 21:27:22</td><td class="print"></td></tr><tr class="print-category"><td class="print">/new.html</td><td class="print"></td><td class="print">Y Cyrff,new, newydd
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-07-04 17:34:27</td><td class="print"></td></tr><tr class="print-category"><td class="print">/privacyandcookies.html</td><td class="print">Privacy and Cookies Policy
+</td><td class="print">Y Cyrff, Privacy and Cookies Policy
+</td><td class="print">Privacy and cookies policy for www.ycyrffgroupie.co.uk</td><td class="print">NULL</td><td class="print">Privacy and Cookies Policy
+</td><td class="print">Privacy and cookies policy for www.ycyrffgroupie.co.uk</td><td class="print">http://www.ycyrffrgroupie.co.uk/images/title.JPG</td><td class="print">NULL</td><td class="print">Added to the database</td><td class="print">NULL</td><td class="print">2012-08-14 17:33:17</td><td class="print">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/css/table.css&quot;&gt; &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/css/other.css&quot;&gt;  &lt;script type=&quot;text/javascript&quot; src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js&quot;&gt; &lt;/script&gt; &lt;script type=&quot;text/javascript&quot; src=&quot;/includes/javascript/cookie.js&quot;&gt;   &lt;/script&gt; &lt;script type=&quot;text/javascript&quot;&gt;     window._idl = {};     _idl.variant = &quot;banner&quot;;     (function() {         var idl = document.createElement('script');         idl.type = 'text/javascript';         idl.async = true;         idl.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'members.internetdefenseleague.org/include/?url=' + (_idl.url || '') + '&amp;campaign=' + (_idl.campaign || '') + '&amp;variant=' + (_idl.variant || 'banner');         document.getElementsByTagName('body')[0].appendChild(idl);     })(); &lt;/script&gt;</td></tr><tr class="print-category"><td class="print">/singles.html</td><td class="print">Singles/Senglau
+</td><td class="print">Y Cyrff, Y Cyrff Singles, Y Cyrff senglau
+</td><td class="print">Y Cyrff's single discography.
+</td><td class="print">Discograffi sengl Y Cyrff.</td><td class="print">Singles/Senglau
+</td><td class="print">Y Cyrff's single discography. Discograffi sengl Y Cyrff.</td><td class="print">http://www.ycyrffrgroupie.co.uk/images/title.JPG</td><td class="print">NULL</td><td class="print">Added to the database</td><td class="print">NULL</td><td class="print">2012-08-18 21:27:23</td><td class="print">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/table.css&quot;&gt;</td></tr><tr class="print-category"><td class="print">/sitemap.html</td><td class="print">Sitemap / Map o we safle
+</td><td class="print">Y Cyrff, sitemap
+</td><td class="print">Sitemap for www.ycyrffgroupie.co.uk.
+</td><td class="print">Map o www.ycyrffgroupie.co.uk.</td><td class="print">Me / Fi
+</td><td class="print">Sitemap for www.ycyrffgroupie.co.uk.Map o www.ycyrffgroupie.co.uk.</td><td class="print">http://www.ycyrffrgroupie.co.uk/images/title.JPG</td><td class="print">NULL</td><td class="print">Added to the database</td><td class="print">NULL</td><td class="print">2012-08-18 21:27:23</td><td class="print"></td></tr><tr class="print-category"><td class="print">/thankyou.html</td><td class="print">Thank You / Diolch
+</td><td class="print">Y Cyrff, Thank you, diolch
+</td><td class="print">People I would like to thank who has helped with the site.</td><td class="print">Pobl hoffwn ddiolch sydd wedi helpu eto'r safle.</td><td class="print">Thank You / Diolch
+</td><td class="print">People I would like to thank who has helped with the site. Pobl hoffwn ddiolch sydd wedi helpu eto'r safle.</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-18 21:27:23</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/pummunud.html</td><td class="print"></td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-11 13:08:29</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/cyrff19.html</td><td class="print"></td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-19 18:09:19</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/rasal12.html</td><td class="print"></td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-11 13:08:30</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/cyrff17.html</td><td class="print"></td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-19 18:09:20</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/cyrff20.html</td><td class="print"></td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-19 18:09:19</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/cyrff15.html</td><td class="print"></td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-19 18:09:20</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/cyrff3.html</td><td class="print"></td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-11 13:08:08</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/bandmemberspic.html</td><td class="print">Individual Band Members Pictures/ LLuniau o Aelodau Unigol o Band 
+</td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print">Individual Band Members Pictures/ LLuniau o Aelodau Unigol o Band 
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-18 22:08:34</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/mark6.html</td><td class="print"></td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-11 13:08:25</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/untitled12.html</td><td class="print"></td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-11 13:08:33</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/cyrff7.html</td><td class="print"></td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-19 18:09:18</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/pum_munud.html</td><td class="print"></td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-06-27 13:39:32</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/mark2.html</td><td class="print"></td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-11 13:08:21</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/cyrff2.html</td><td class="print"></td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-19 18:09:18</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/cyrff21.html</td><td class="print"></td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-19 18:09:19</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/mark4.html</td><td class="print"></td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-11 13:08:23</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/cyrff10.html</td><td class="print"></td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-19 18:09:18</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/barrymarine.html</td><td class="print"></td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-11 13:07:43</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/cyrff14.html</td><td class="print"></td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-19 18:09:20</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/paul2.html</td><td class="print"></td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-11 13:08:27</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/cyrff4.html</td><td class="print"></td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-11 13:08:12</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/ankst3.html</td><td class="print"></td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-11 13:07:33</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/coverart.html</td><td class="print">Cover Art / Celf y Clawr
+</td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print">Cover Art / Celf y Clawr
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-18 22:08:41</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/mark_barry.html</td><td class="print"></td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-06-27 13:38:31</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/bandpic.html</td><td class="print">Band Pictures/ LLuniau o y band
+</td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print">Band Pictures/ LLuniau o y band
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-20 08:34:04</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/cyrff22.html</td><td class="print"></td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-19 18:09:19</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/markbarry.html</td><td class="print"></td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-11 13:08:26</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/cyrff16.html</td><td class="print"></td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-19 18:09:20</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/cyrff11.html</td><td class="print"></td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-19 18:09:18</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/barry2.html</td><td class="print"></td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-11 13:07:39</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/yrhaint.html</td><td class="print"></td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-11 13:08:35</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/awdloanobaith.html</td><td class="print"></td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-11 13:07:34</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/ankst1.html</td><td class="print"></td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-11 13:07:31</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/cyrff18.html</td><td class="print"></td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-19 18:09:17</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/index.html</td><td class="print"></td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-18 22:08:41</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/cyrff.html</td><td class="print"></td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-19 18:09:19</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/cyrff5.html</td><td class="print"></td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-11 13:08:12</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/barry.html</td><td class="print"></td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-11 13:07:38</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/hwylfawrheulwen.html</td><td class="print"></td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-11 13:08:19</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/band_members_pic.html</td><td class="print"></td><td class="print">Y Cyrff, Y Cyrff Links
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-06-27 13:24:23</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/cyrff8.html</td><td class="print"></td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-19 18:09:14</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/mark5.html</td><td class="print"></td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-11 13:08:24</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/cyrff6.html</td><td class="print"></td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-11 13:08:14</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/cyrff13.html</td><td class="print"></td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-19 18:09:20</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/cyrff12.html</td><td class="print"></td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-19 18:09:17</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/mark.html</td><td class="print"></td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-11 13:08:21</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/mark3.html</td><td class="print"></td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-11 13:08:23</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/paul.html</td><td class="print"></td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-11 13:08:27</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/dylan2.html</td><td class="print"></td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-11 13:08:18</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/barry_marine.html</td><td class="print"></td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-06-27 13:25:53</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/cyrff9.html</td><td class="print"></td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-19 18:09:18</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/ankst2.html</td><td class="print"></td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-11 13:07:32</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/dylan.html</td><td class="print"></td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-11 13:08:17</td><td class="print"></td></tr><tr class="print-category"><td class="print">/Images/barrymark.html</td><td class="print"></td><td class="print">Y Cyrff, Y Cyrff picture
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-11 13:07:43</td><td class="print"></td></tr><tr class="print-category"><td class="print">/games/obsessed.html</td><td class="print">How Obsessed Are You With Y Cyrff?
+</td><td class="print">Y Cyrff, Obsession Test
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print">How Obsessed Are You With Y Cyrff?
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-15 22:10:38</td><td class="print"></td></tr><tr class="print-category"><td class="print">/games/brickwall.html</td><td class="print"></td><td class="print">Y Cyrff, graffiti wall
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-15 22:10:36</td><td class="print"></td></tr><tr class="print-category"><td class="print">/games/quiz.html</td><td class="print">Y Cyrff Quiz
+</td><td class="print">Y Cyrff, Y Cyrff quiz
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print">Y Cyrff Quiz
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-15 22:10:39</td><td class="print">&lt;script language=&quot;JavaScript&quot; type=&quot;text/javascript&quot;&quot;&gt;&lt;!-- Begin var ans = new Array; var done = new Array; var yourAns = new Array; var explainAnswer = new Array;  var score = 0; ans[1] = &quot;a&quot;; ans[2] = &quot;c&quot;; ans[3] = &quot;b&quot;; ans[4] = &quot;c&quot;; ans[5] = &quot;a&quot;; ans[6] = &quot;d&quot;;   explainAnswer[1]=&quot;The reason why Answer 1 is Blah Blah Blah&quot;; explainAnswer[2]=&quot;The reason why Answer 2 is Blah Blah Blah&quot;; explainAnswer[3]=&quot;The reason why Answer 3 is Blah Blah Blah&quot;; explainAnswer[4]=&quot;The reason why Answer 4 is Blah Blah Blah&quot;; explainAnswer[5]=&quot;The reason why Answer 5 is Blah Blah Blah&quot;; explainAnswer[6]=&quot;The reason why Answer 6 is Blah Blah Blah&quot;;  function Engine(question, answer) { yourAns[question]=answer; }  function Score(){ var answerText = &quot;How did you do?\n------------------------------------\n&quot;; for(i=1;i&lt;=6;i++){    answerText=answerText+&quot;\nQuestion :&quot;+i+&quot;\n&quot;;   if(ans[i]!=yourAns[i]){     answerText=answerText+&quot;\nThe correct answer was &quot;+ans[i]+&quot;\n&quot;+explainAnswer[i]+&quot;\n&quot;;   }   else{     answerText=answerText+&quot; \nCorrect! \n&quot;;     score++;   } }  answerText=answerText+&quot;\n\nYour total score is : &quot;+score+&quot;\n&quot;;  //now score the user answerText=answerText+&quot;\nComment : &quot;; if(score&lt;=0){ answerText=answerText+&quot;You need to learn some more&quot;; } if(score&gt;=1 &amp;&amp; score &lt;=2){ answerText=answerText+&quot;bit more practice&quot;; } if(score&gt;=3 &amp;&amp; score &lt;=3){ answerText=answerText+&quot;doing ok&quot;; } if(score&gt;4){ answerText=answerText+&quot;You know your stuff then!&quot;; }  alert(answerText);  } //  End --&gt; &lt;/script&gt;</td></tr><tr class="print-category"><td class="print">/games/alcoholtest.html</td><td class="print">How Drunk Are You?
+</td><td class="print">Y Cyrff, alcohol test
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print">How Drunk Are You?
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-15 22:10:36</td><td class="print">&lt;script type=&quot;Javascript&quot; type=&quot;text/javascript&quot;&gt; var lose = 'YOU ARE DRUNK! OH NO!&lt;BR&gt;&lt;BR&gt;Thank you for taking the Alcohol Test  ' var win = 'YOU ARE NOT DRUNK! GOOD!&lt;BR&gt;&lt;BR&gt;Thank you for taking the Alcohol Test '  function finish(message) {  clearTimeout(timer)  output.innerHTML = message  button1.style.display='none'  button2.style.display='none'  button3.style.display='none'  }  function moveme(obj) {  obj.style.pixelLeft += Math.random() * 250 - 150  obj.style.pixelTop += Math.random() * 250 - 150  }</td></tr><tr class="print-category"><td class="print">/games/hangman.html</td><td class="print"></td><td class="print">Y Cyrff, Y Cyrff hangman
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-15 22:10:38</td><td class="print"></td></tr><tr class="print-category"><td class="print">/games/index.html</td><td class="print">Games/ Gemau
+</td><td class="print">Y Cyrff, games
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print">Games/ Gemau
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-15 22:10:38</td><td class="print"></td></tr><tr class="print-category"><td class="print">/interviews/catchingupwithcatatonia.html</td><td class="print">Catching up with Catatonia
+</td><td class="print">Y Cyrff, Mark Roberts, Paul Jones
+</td><td class="print">One of the only website about Y Cyrff.
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print">Catching up with Catatonia
+</td><td class="print">One of the only website about Y Cyrff.
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-13 22:54:58</td><td class="print"></td></tr><tr class="print-category"><td class="print">/interviews/localheros.html</td><td class="print">Local Heros
+</td><td class="print">Y Cyrff, Toni Schiavone, Y Cyrff interviews
+</td><td class="print">One of the only website about Y Cyrff.
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print">Local Heros
+</td><td class="print">One of the only website about Y Cyrff.
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-13 22:54:59</td><td class="print"></td></tr><tr class="print-category"><td class="print">/interviews/cyrffcerysacatatonia.html</td><td class="print">Cyrff, Cerys a Catatonia
+</td><td class="print">Cyrff, Catatonia, Golwg
+</td><td class="print">One of the only website about Y Cyrff.
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print">Cyrff, Cerys a Catatonia
+</td><td class="print">One of the only website about Y Cyrff.
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-13 22:54:58</td><td class="print"></td></tr><tr class="print-category"><td class="print">/interviews/index.html</td><td class="print">Interviews/Cyweliadau
+</td><td class="print">Y Cyrff, Y Cyrff interviews
+</td><td class="print">One of the only website about Y Cyrff.
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print">Interviews/Cyweliadau
+</td><td class="print">One of the only website about Y Cyrff.
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-13 22:54:58</td><td class="print"></td></tr><tr class="print-category"><td class="print">/interviews/formercatatoniaguitaristmarkrobertsreturnswithnewprojecttheearth.html</td><td class="print">Former Catatonia guitarist Mark Roberts returns with new project The Earth
+</td><td class="print">Y Cyrff, Mark Roberts, The Earth, Llanrwst, Catatonia, Interview, chess
+</td><td class="print">One of the only website about Y Cyrff.
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print">Former Catatonia guitarist Mark Roberts returns with new project The Earth
+</td><td class="print">One of the only website about Y Cyrff.
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-13 22:54:59</td><td class="print"></td></tr><tr class="print-category"><td class="print">/lyrics/eithaf.html</td><td class="print">Eithaf
+</td><td class="print">Y Cyrff, Eithaf lyrics, Y Cyrff lyrics
+</td><td class="print">One of the only website about Y Cyrff.
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print">Eithaf
+</td><td class="print">One of the only website about Y Cyrff.
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-15 21:33:28</td><td class="print"></td></tr><tr class="print-category"><td class="print">/lyrics/beddargraff.html</td><td class="print">Beddargraff
+</td><td class="print">Y Cyrff, Beddargraff lyrics, Y Cyrff lyrics
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print">Beddargraff
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-15 21:33:28</td><td class="print"></td></tr><tr class="print-category"><td class="print">/lyrics/nunlle.html</td><td class="print">Nunlle
+</td><td class="print">Y Cyrff, Nunlle lyrics, Y Cyrff lyrics
+</td><td class="print">One of the only website about Y Cyrff.
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print">Nunlle
+</td><td class="print">One of the only website about Y Cyrff.
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-15 21:33:29</td><td class="print"></td></tr><tr class="print-category"><td class="print">/lyrics/cwrdd.html</td><td class="print">Cwrdd
+</td><td class="print">Y Cyrff, Cwrdd lyrics, Y Cyrff lyrics
+</td><td class="print">One of the only website about Y Cyrff.
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print">Cwrdd
+</td><td class="print">One of the only website about Y Cyrff.
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-15 21:33:28</td><td class="print"></td></tr><tr class="print-category"><td class="print">/lyrics/index.html</td><td class="print">Lyrics/ Geiriau
+</td><td class="print">Y Cyrff, Y Cyrff Lyrics
+</td><td class="print">One of the only website about Y Cyrff.
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print">Lyrics/ Geiriau
+</td><td class="print">One of the only website about Y Cyrff.
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-15 21:33:29</td><td class="print"></td></tr><tr class="print-category"><td class="print">/lyrics/pethauachlysurol.html</td><td class="print">Pethau Achlysurol
+</td><td class="print">Y Cyrff, Pethau Achlysurol lyrics, Y Cyrff lyrics
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print">Pethau Achlysurol
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-15 21:33:30</td><td class="print"></td></tr><tr class="print-category"><td class="print">/lyrics/ydeffro.html</td><td class="print">Y Deffro
+</td><td class="print">Y Cyrff, Y Deffro lyrics, Y Cyrff lyrics
+</td><td class="print">One of the only website about Y Cyrff.
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print">Y Deffro
+</td><td class="print">One of the only website about Y Cyrff.
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-15 21:33:30</td><td class="print"></td></tr><tr class="print-category"><td class="print">/lyrics/hwylfawrheulwen.html</td><td class="print">Hwyl Fawr Heulwen
+</td><td class="print">Y Cyrff, Hwyl Fawr Heulwen lyrics, Y Cyrff lyrics
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print">Hwyl Fawr Heulwen
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-15 21:33:29</td><td class="print"></td></tr><tr class="print-category"><td class="print">/lyrics/llawenyddhebddiwedd.html</td><td class="print">LLawenydd Heb DDiwedd
+</td><td class="print">Y Cyrff, LLawenydd Heb DDiwedd lyrics, Y Cyrff lyrics
+</td><td class="print">One of the only website about Y Cyrff.
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print">LLawenydd Heb DDiwedd
+</td><td class="print">One of the only website about Y Cyrff.
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-15 21:33:29</td><td class="print"></td></tr><tr class="print-category"><td class="print">/lyrics/cymrulloegrallanrwst.html</td><td class="print">Cymru, LLoegr a LLanrwst
+</td><td class="print">Y Cyrff, Cymru LLoegr a LLanrwst lyrics, Y Cyrff lyrics
+</td><td class="print">One of the only website about Y Cyrff.
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print">Cymru, LLoegr a LLanrwst
+</td><td class="print">One of the only website about Y Cyrff.
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-15 21:33:28</td><td class="print"></td></tr><tr class="print-category"><td class="print">/news/mwycracnagerioed.html</td><td class="print">Mwy CRAC Nag Erioed...
+</td><td class="print">Y Cyrff, Mwy CRAC Nag Erioed, LLwybr LLaethog, LLanrwst, John Griffiths, Mark Roberts, Y Cyrff news
+</td><td class="print">One of the only website about Y Cyrff.
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print">Mwy CRAC Nag Erioed...
+</td><td class="print">One of the only website about Y Cyrff.
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-15 22:31:06</td><td class="print"></td></tr><tr class="print-category"><td class="print">/news/yffyrcamroiprocbacharall.html</td><td class="print">Y FFyrc Am Roi Proc Bach Arall
+</td><td class="print">Y Cyrff, Y FFyrc Am Roi Proc Bach Arall, Mark Roberts, Toni Schiavone, Sherbet Antlers, Catatonia, Y FFyrc
+</td><td class="print">One of the only website about Y Cyrff.
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print">Y FFyrc Am Roi Proc Bach Arall
+</td><td class="print">One of the only website about Y Cyrff.
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-15 22:31:06</td><td class="print"></td></tr><tr class="print-category"><td class="print">/news/boxset.html</td><td class="print"></td><td class="print">Y Cyrff, box set, atalnod
+</td><td class="print">One of the only website about Y Cyrff.
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff.
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-15 22:31:05</td><td class="print"></td></tr><tr class="print-category"><td class="print">/news/bbcdoc.html</td><td class="print">Rhaglen ar C2 - 02/05/2012
+</td><td class="print">Y Cyrff, box set, atalnod
+</td><td class="print">One of the only website about Y Cyrff.
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print">Rhaglen ar C2 - 02/05/2012
+</td><td class="print">One of the only website about Y Cyrff.
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-15 22:31:04</td><td class="print"></td></tr><tr class="print-category"><td class="print">/news/fourletterwordthatbannedsong.html</td><td class="print">Four-letter word that banned song
+</td><td class="print">Y Cyrff, Radio Cymru, Barry Cawley, Dylan Hughes, Paul Jones, Mark Roberts
+</td><td class="print">One of the only website about Y Cyrff.
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print">Four-letter word that banned song
+</td><td class="print">One of the only website about Y Cyrff.
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-15 22:31:06</td><td class="print"></td></tr><tr class="print-category"><td class="print">/news/documentaryonc2.html</td><td class="print">Rhaglen ar C2
+</td><td class="print">Y Cyrff, C2, Mark Roberts, Paul Jones
+</td><td class="print">One of the only website about Y Cyrff.
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print">Rhaglen ar C2
+</td><td class="print">One of the only website about Y Cyrff.
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-15 22:31:05</td><td class="print"></td></tr><tr class="print-category"><td class="print">/news/index.html</td><td class="print">News Articles/ Erthyglau Newyddion
+</td><td class="print">Y Cyrff, Y Cyrff news
+</td><td class="print">One of the only website about Y Cyrff.
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print">News Articles/ Erthyglau Newyddion
+</td><td class="print">One of the only website about Y Cyrff.
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-15 22:31:06</td><td class="print"></td></tr><tr class="print-category"><td class="print">/news/cymru.html</td><td class="print">Cymru, LLoegr a LLanrwst
+</td><td class="print">Y Cyrff, Atalnod LLawn, Cymru LLoegr a LLanrwst Tour, Alun Tan Lan, Kentucky AFC, Maharishi, Dan Amor, Jen Jeniro, Mark Roberts, Paul Jones, C2
+</td><td class="print">One of the only website about Y Cyrff.
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print">Cymru, LLoegr a LLanrwst
+</td><td class="print">One of the only website about Y Cyrff.
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-15 22:31:05</td><td class="print"></td></tr><tr class="print-category"><td class="print">/news/bandit.html</td><td class="print"></td><td class="print">Y Cyrff, Bandit, S4C, Mark Roberts, Paul Jones, Cymru LLoegr a LLanrwst Tour
+</td><td class="print">One of the only website about Y Cyrff.
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print"></td><td class="print">One of the only website about Y Cyrff.
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-15 22:31:04</td><td class="print"></td></tr><tr class="print-category"><td class="print">/profiles/llewelynrichardsprofile.html</td><td class="print">LLewelyn Richards Profile/Proffeil LLewelyn Richard
+</td><td class="print">Y Cyrff, LLewelyn Richards Profile
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print">LLewelyn Richards Profile/Proffeil LLewelyn Richard
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-18 20:50:13</td><td class="print"></td></tr><tr class="print-category"><td class="print">/profiles/index.html</td><td class="print">Profiles/Proffeilau
+</td><td class="print">Y Cyrff, Profiles
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print">Profiles/Proffeilau
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-18 20:50:15</td><td class="print"></td></tr><tr class="print-category"><td class="print">/profiles/submitprofile.php</td><td class="print">Submit a Profile/Anfon proffeil
+</td><td class="print">Y Cyrff, Submit Profile
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print">Submit a Profile/Anfon proffeil
+</td><td class="print">One of the only website about Y Cyrff. 
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-18 20:50:15</td><td class="print"></td></tr><tr class="print-category"><td class="print">/reviews/rifiwbuzz.html</td><td class="print">Rifiw Buzz
+</td><td class="print">Y Cyrff, Rifiw Buzz, LLwybr LLaethog, LLanrwst, Y Cyrff and LLwybr LLaethog review
+</td><td class="print">One of the only website about Y Cyrff.
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print">Rifiw Buzz
+</td><td class="print">One of the only website about Y Cyrff.
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-14 08:34:24</td><td class="print"></td></tr><tr class="print-category"><td class="print">/reviews/index.html</td><td class="print">Reviews / Adolygiadau 
+</td><td class="print">Y Cyrff, Y Cyrff reviews
+</td><td class="print">One of the only website about Y Cyrff.
+</td><td class="print">Un o o'r unig we safle am Y Cyrff.</td><td class="print">Reviews / Adolygiadau 
+</td><td class="print">One of the only website about Y Cyrff.
+</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">NULL</td><td class="print">2012-08-14 08:34:24</td><td class="print"></td></tr><tr class="print-category"><td class="print">/reviews/atalnodllawnr.html</td><td class="print">Atalnod LLawn
+</td><td class="print">Y Cyrff, Atalnod LLawn
+</td><td class="print">A review about Atalnod LLawn.</td><td class="print">Adolygiad am Atalnod LLawn.</td><td class="print">Atalnod LLawn
+</td><td class="print">A review about Atalnod LLawn. / Adolygiad am Atalnod LLawn.</td><td class="print">http://www.ycyrffgroupie.co.uk/images/rasal12.jpg</td><td class="print">NULL</td><td class="print">Added to the database</td><td class="print">NULL</td><td class="print">2012-08-14 08:34:24</td><td class="print"></td></tr></table><h2>Table structure for table pages</h2><table class="width100" cellspacing="1"><tr class="print-category"><th class="print">Column</th><td class="print"><b>Type</b></td><td class="print"><b>Null</b></td><td class="print"><b>Default</b></td></tr><tr class="print-category"><td class="print"><i><b>filename</b></i></td><td class="print">varchar(1000)</td><td class="print">No</td><td class="print"></td></tr><tr class="print-category"><td class="print">title</td><td class="print">varchar(1000)</td><td class="print">Yes</td><td class="print">NULL</td></tr><tr class="print-category"><td class="print">keywords</td><td class="print">varchar(1000)</td><td class="print">Yes</td><td class="print">NULL</td></tr><tr class="print-category"><td class="print">descriptionen</td><td class="print">varchar(1000)</td><td class="print">Yes</td><td class="print">NULL</td></tr><tr class="print-category"><td class="print">descriptioncymraeg</td><td class="print">varchar(1000)</td><td class="print">Yes</td><td class="print">NULL</td></tr><tr class="print-category"><td class="print">facebooktitle</td><td class="print">varchar(1000)</td><td class="print">Yes</td><td class="print">NULL</td></tr><tr class="print-category"><td class="print">facebookdescription</td><td class="print">varchar(1000)</td><td class="print">Yes</td><td class="print">NULL</td></tr><tr class="print-category"><td class="print">facebookimage</td><td class="print">varchar(1000)</td><td class="print">Yes</td><td class="print">NULL</td></tr><tr class="print-category"><td class="print">facebookurl</td><td class="print">varchar(1000)</td><td class="print">Yes</td><td class="print">NULL</td></tr><tr class="print-category"><td class="print">whatnewenglish</td><td class="print">varchar(1000)</td><td class="print">Yes</td><td class="print">NULL</td></tr><tr class="print-category"><td class="print">whatnewcymraeg</td><td class="print">varchar(1000)</td><td class="print">Yes</td><td class="print">NULL</td></tr><tr class="print-category"><td class="print">datelastmodified</td><td class="print">datetime</td><td class="print">Yes</td><td class="print">NULL</td></tr><tr class="print-category"><td class="print">htmlcode</td><td class="print">varchar(2500)</td><td class="print">No</td><td class="print"></td></tr></table></body></html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-14" />
+<title>500 Internal Server Error</title>
+<link rel="stylesheet" type="text/css" href="http://www.ycyrffgroupie.co.uk/css/style.css">
+<link rel="shortcut icon" href="http://www.ycyrffgroupie.co.uk/Images/icon/cyrff.ico">
+</head>
+
+<body>
+<div id="menu">
+
+<ul class="menu">
+<li><a href="http://www.ycyrffgroupie.co.uk/">Home / <span lang="cy">Gartre</span></a></li>
+<li>Band / Band
+<ul>
+<li><a href="http://www.ycyrffgroupie.co.uk/about.html">About / <span lang="cy">Am</span></a></li>
+<li><a href="http://www.ycyrffgroupie.co.uk/discography.html">Discography / <span lang="cy">Discograff</span></a></li>
+</ul>
+</li>
+
+<li>Gallery / Oriel
+<ul>
+<li><a href="http://www.ycyrffgroupie.co.uk/sound_clips/index.html">Sound Clips / <span lang="cy">Swn FFeiliau</span></a></li>
+<li><a href="http://www.ycyrffgroupie.co.uk/Images/index.html">Pictures / <span lang="cy">LLuniau</span></a></li>
+</ul>
+</li>
+
+<li>Media / Cyfryngau
+<ul>
+<li><a href="http://www.ycyrffgroupie.co.uk/yrics/index.html">Lyrics / <span lang="cy">Geiriau</span></a></li>
+<li><a href="http://www.ycyrffgroupie.co.uk/reviews/index.html">Reviews / <span lang="cy">Adolygiadau</span></a></li>
+<li><a href="http://www.ycyrffgroupie.co.uk/interviews/index.html">Interviews / <span lang="cy">Cyweliadau</span></a></li>
+<li><a href="http://www.ycyrffgroupie.co.uk/news/index.html">News Articles / <span lang="cy">Erthyglau Newyddion</span></a></li>
+</ul>
+</li>
+
+<li>Fans / FFanau
+<ul>
+<li><a href="http://www.ycyrffgroupie.co.uk/games/index.html">Games / <span lang="cy">Gemau</span></a></li>
+<li><a href="http://www.ycyrffgroupie.co.uk/profiles/index.html">Profiles/ <span lang="cy">Proffeil</span></a></li>
+<li><a target="_blank" href="http://pub9.bravenet.com/chat/show.php/745618418">Chat Room / <span lang="cy">Ystafell Sgwrs</span></a></li>
+<li><a target="_blank" href="http://pub9.bravenet.com/forum/static/show.php?usernum=745618418&amp;frmid=2532&amp;msgid=0">Forum / <span lang="cy">FForwn</span></a></li>
+<li><a target="_blank" href="http://pub9.bravenet.com/vote/vote.php?usernum=745618418&amp;cpv=1">Vote / <span lang="cy">Pleidlesio</span></a></li>
+</ul>
+</li>
+
+<li>Other / Arall
+<ul>
+<li><a href="http://www.ycyrffgroupie.co.uk/forsale.html">For Sale / <span lang="cy">Ar Wreth</span></a></li>
+<li><a href="http://www.ycyrffgroupie.co.uk/download.html">Downloads / <span lang="cy">Lawrlwythi</span></a></li>
+<!--<li><a href="translation.html">Translation of song names and album titles</a></li>-->
+</ul>
+</li>
+
+<li>Web / Gwe
+<ul>
+<li><a href="http://www.ycyrffgroupie.co.uk/links.html">Links / <span lang="cy">Cysyllitiadau</span></a></li>
+<li><!--<a href="newguestbook.html">--><a href="http://www.ycyrffgroupie.co.uk/guestbook.html">Guestbook / <span lang="cy">Gwestai LLyfr</span></a></li>
+<li><a href="http://www.ycyrffgroupie.co.uk/sitemap.html">Sitemap / <span lang="cy">Map o we safle</span></a></li>
+</ul>
+</li>
+
+<li>Me / Fi
+<ul>
+<li><a href="http://www.ycyrffgroupie.co.uk/thankyou.html">Thank You / <span lang="cy">Diolch</span></a></li>
+<li><a href="http://www.ycyrffgroupie.co.uk/about_me.html">About Me / <span lang="cy">Am Fi</span></a></li>
+</ul>
+</li>
+
+</ul>
+
+</div>
+
+
+<div id="content">
+<p><img src="http://www.ycyrffgroupie.co.uk/Images/title.JPG" alt="Cyrff website/ Cyrff we safle" width="274" height="104"</p>
+  <h1>500 Internal Server Error / 500 Gwall Gweinydd Mewnol</h1>
+  <p>The page cannot be displayed.
+  <br>
+  Ni all y dudalen yn cael ei arddangos.
+  </p>
+    <p>Return to <a class="normal" href="/" target="_self">home page</a> or use the menu at the side to navigate the site.
+<br>
+  Dychwelyd i'r <a class="normal" href="/" target="_self">dudalen gartref</a> neu defnyddiwch y ddewislen ar yr ochr i lywio o gwmpas y afle we.
+  </p>
+
+</body>
+</html>

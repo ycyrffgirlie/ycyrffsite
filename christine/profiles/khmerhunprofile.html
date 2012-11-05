@@ -1,0 +1,86 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+<title>Khmer Hun's Profile</title>
+<meta name="KEYWORD" content="Y Cyrff, Khmer Hun Profile">
+<meta name="DESCRIPTION" content="One of the only website about Y Cyrff. 
+Un o y unig we safle am Y Cyrff.">
+<meta name="author" content="Christine Black">
+<meta name="generator" content="Notepad, Wordpad">
+<meta http-equiv="Content-Type" content="text/html; charset=Iso-8859-14">
+<meta name="rating" content="General">
+<link rel="shortcut icon" href="../Images/icon/cyrff.ico">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31457269-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+
+<div id="menu">
+<!--It used that the menu was made up of over 60 lines of code.. Now it's 6 lines of code. It isn't that easier for new pages-->
+<?php
+include("../includes/menu.html");
+?>
+</div>
+
+<div id="content">
+<H1>Khmer Hun's Profile/<span lang="cy">Proffeil Khmer Hun</span></H1>
+
+<p><b>Name/<span lang="cy">Enw:</span></b>&nbsp;Khmer Hun
+<br>
+<b>Location/<span lang="cy">LLe:</span></b>&nbsp;Caernarfon, ond Aberystwyth yn wreiddiol
+<br>
+<b>Website/<span lang="cy">Gwe safle:</span></b>&nbsp;
+<br>
+<b>E-mail/<span lang="cy">E-bost:</span></b>&nbsp;
+<br>
+<b>Where first heard about Cyrff?/<span lang="cy">LLe naethoch chi cyntaf wedi clywed am Y Cyrff?</span></b>&nbsp;Senglau yn yr ysgol tua 1985/1986
+<br>
+<b>Favourite Cyrff song/<span lang="cy">Hoff g&acirc;n Cyrff:</span></b>&nbsp;Y Pleaser/Trwy'r Cymylau/ anodd dewis
+<br>
+<b>Favorite Cyrff album/<span lang="cy">Hoff albwn Cyrff:</span></b>&nbsp;Testament Newydd
+<br>
+<b>Other comments/<span lang="cy">Eraill sywl:</span></b>&nbsp;
+</p>
+
+<?php
+
+$internal = array ('http://christine.ycyrffgroupie.co.uk/profiles/profile.html',
+		'http://www.ycyrffgroupie.co.uk/profiles/profile.html',
+		'http://dev.ycyrffgroupie.co.uk/profiles/profile.html');
+if (in_array($_SERVER[HTTP_REFERER],$internal)){
+?>
+<p><img src="../images/site/back.jpg" width="156" height="44" alt="Back/Yn ol" onClick="history.back()"></p>
+<?php
+}else{
+?>
+<p>
+<a href="/profiles/profile.html"><img src="../images/site/back.jpg" width="156" height="44" alt="Back/Yn ol"></a>
+</p>
+<?php
+}
+?>
+
+</div>
+
+<div style="clear: both;">
+</div>
+<?php include("../includes/footer.php");?>
+
+</body>
+
+</html>

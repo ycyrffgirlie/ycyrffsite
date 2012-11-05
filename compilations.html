@@ -1,0 +1,85 @@
+<?php 
+include("includes/header.php")
+?>
+
+<body>
+
+<div id="menu">
+<!--It used that the menu was made up of over 60 lines of code.. Now it's 6 lines of code. It isn't that easier for new pages-->
+<?php
+include("includes/menu.html");
+?>
+</div>
+
+<div id="content">
+
+<H1>Compilations/ Amlgyfrannog</H1>
+
+<br>
+<br>
+
+<table>
+	<tr>
+		<td class="51">&nbsp;</td>
+		<td class="49">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="51"><p><span lang="cy">Cam o'r Tywyllwch</span></p></td>
+		<td class="49"><p><a class="normal" href="sound_clips/y_cyrff_lebanon.mp3"><span lang="cy">Lebanon</span></a><br>
+		<p><span lang="cy">Tic Toc</span></p></td>
+	</tr>
+ 	<tr>
+		<td class="51">&nbsp;</td>
+		<td class="49">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="51"><a class="normal" href="sound_clips/y_cyrff_euog.mp3"><span lang="cy">Euog</span></a></td>
+		<td class="49"><p><span lang="cy">O'r Gad</span></p></td>
+	</tr>
+ 	<tr>
+		<td class="51">&nbsp;</td>
+		<td class="49">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="51"><p><span lang="cy">Hei DJ</span></p></td>
+		<td class="49"><p><span lang="cy">Crafan (live/byw)</span></p></td>
+	</tr>
+ 	<tr>
+		<td class="51">&nbsp;</td>
+		<td class="49">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="51"><p><span lang="cy">Ankst Records: Radio Crymi Playlist</span></p></td>
+		<td class="49"><p><a class="normal" href="sound_clips/y_cyrff_hwyl_fawr_heulwen.mp3"><span lang="cy">Hwyl Fawr Heulwen</span></a><br>
+		<a class="normal" href="sound_clips/y_cyrff_euog.mp3"><span lang="cy">Euog</span></a><br>
+		<a class="normal" href="sound_clips/y_cyrff_pethau_achlysurol.mp3"><span lang="cy">Pethau Achlysurol</span></a><br>
+		<a class="normal" href="sound_clips/y_cyrff_llawenydd_heb_ddiwedd.mp3"><span lang="cy">LLawenydd Heb DDiwedd</span></a><br>
+		<a class="normal" href="sound_clips/y_cyrff_cymru_lloegr_a_llanrwst.mp3"><span lang="cy">Cymru, LLoegr a LLanrwst</span></a></p></td>
+	</tr>
+ </table>
+
+<?php
+
+$internal = array('http://christine.ycyrffgroupie.co.uk/discography.html',
+		'http://www.ycyrffgroupie.co.uk/discography.html',
+		'http://dev.ycyrffgroupie.co.uk/discography.html');
+if (in_array($_SERVER[HTTP_REFERER],$internal)){
+?>
+<p><img src="../images/site/back.jpg" width="156" height="44" alt="Back/Yn ol" onClick="history.back()"></p>
+<?php
+}else{
+?>
+<a href="/discography.html"><img src="../images/site/back.jpg" width="156" height="44" alt="Back/Yn ol"></a>
+<?php
+}
+?>
+
+</div>
+
+<div style="clear: both;">
+</div>
+<?php include("includes/footer.php");?>
+
+</body>
+
+</html>
