@@ -1,70 +1,42 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
-<html>
-<HEAD>
-<TITLE>What is New? Beth Sy Newydd?</TITLE>
-<META NAME="KEYWORD" CONTENT="Y Cyrff,new, newydd">
-<META NAME="DESCRIPTION" CONTENT="One of the only website about Y Cyrff. 
-Un o y unig we safle am Y Cyrff.">
-<META NAME="AUTHOR" CONTENT="Christine Black">
-<META NAME="GENERATOR" CONTENT="Notepad, Wordpad">
-<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Iso-8859-14">
-<META NAME="RATING" CONTENT="General">
-<link rel="shortcut icon" href="Images/icon/cyrff.ico">
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-31457269-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
+<?
+require('includes/new.php');
+include("includes/header.php");
+?>
 </head>
 
 
 <body>
-<p>
-Most of the site has had the new design applied to it - there just a two pages (excluding the images pages) which haven't. Just waiting for my proof-readers to send back the corrections. The images pages just undergoing a total re-design which I need to write.
+
+<?=whatnewen();?>
 </p>
 
-<p>
-<span class="underline">What is new?</span>
-<br>
-An interview with Mark Roberts - <a class="normal" href="interviews/formercatatoniaguitaristmarkrobertsreturnswithnewprojecttheearth.html" target="_blank">Former Catatonia guitarist Mark Roberts returns with new project The Earth</a>.
-<br>
-A <a class="normal" href="contact.php" onClick="window.open('contact.php','Contact','height=800,width=500,top=150'); return false">new contact page</a>
-<br>
-A new <a class="normal" href="profiles/submitprofile.php" target="_blank">submit fan profile</a> page
-<br>
-News about a <a class="normal" href="news/bbcdoc.html" target="_blank">documentary on C2 - 02/05/2012</a>
+<?=whatnewcy();?>
 </p>
 
-<p>
-Mae'r rhan fwyaf o'r safle wedi cael y cynllun newydd gymhwyso i - mae dim ond dwy dudalen (heb gynnwys y tudalennau lluniau) nad ydynt wedi. Dim ond yn aros am fy prawf-darllenwyr i anfon yn ôl y cywiriadau. Mae'r tudalennau lluniau yn unig sy'n cael cyfanswm ail-ddylunio sydd angen i mi ysgrifennu.
-</p>
-
-<p>
-<span class="underline">Beth sy newydd?</span>
-<br>
-Cyweliad efo Mark Roberts - <a class="normal" href="interviews/formercatatoniaguitaristmarkrobertsreturnswithnewprojecttheearth.html" target="_blank">Former Catatonia guitarist Mark Roberts returns with new project The Earth</a>.
-<br>
-<a class="normal" href="contact.php" onClick="window.open('contact.php','Contact','height=800,width=500,top=150'); return false">Newydd cysylltu dudalen</a>
-<br>
-Newydd <a class="normal" href="profiles/submitprofile.php" target="_blank">anfon proffeil  ffan</a> tudalen.
-<br>
-Newyddion am <a class="normal" href="news/bbcdoc.html" target="_blank">rhaglen ar C2 - 02/05/2012</a>
-
-<!--Dw i wedi .-->
-</p>
 <p><script language="Javascript">
 <!--
 document.write(document.lastModified);
 //-->
 </script>
 </p>
+
+<?php
+
+$internal = array('http://christine.ycyrffgroupie.co.uk/',
+		'http://christine.ycyrffgroupie.co.uk/index.html',
+		'http://www.ycyrffgroupie.co.uk/',
+		'http://www.ycyrffgroupie.co.uk/index.html',
+		'http://dev.ycyrffgroupie.co.uk/',
+		'http://dev.ycyrffgroupie.co.uk/index.html');
+if (in_array($_SERVER[HTTP_REFERER],$internal)){
+?>
+<p><img src="../images/site/back.jpg" width="156" height="44" alt="Back/Yn ol" onClick="history.back()"></p>
+<?php
+}else{
+?>
+<a href="/"><img src="../images/site/back.jpg" width="156" height="44" alt="Back/Yn ol"></a>
+<?php
+}
+?>
+
 </html>
