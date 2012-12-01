@@ -2,32 +2,95 @@
 order allow,deny
 allow from all
 deny from 50.112.31.207
+deny from 182.68.85.172
 </Files>
+
+#Ban people from seeing .htaccess
+
+<Files .htaccess>
+Order allow,deny
+Allow from 188.223.77.182 212.58.48.107
+Deny from all
+</Files>
+
+
 RewriteEngine on
+
+#rewrites are that needed
+<Files *.jpg>
+redirect 301 /Images/ http://www.ycyrffgroupie.co.uk/images/
+</Files>
 
 redirect 301 /profiles/submit_profile.html http://www.ycyrffgroupie.co.uk/profiles/submitprofile.php
 redirect 301 /profiles/submit_profile1.html http://www.ycyrffgroupie.co.uk/profiles/submitprofile.php
+redirect 301 /profiles/submitprofile.html  http://www.ycyrffgroupie.co.uk/profiles/submitprofile.php
+redirect 301 /profiles/index1.html http://www.ycyrffgroupie.co.uk/profiles/index.html
 redirect 301 /:,: http://www.ycyrffgroupie.co.uk
 redirect 301 /contact http://www.ycyrffgroupie.co.uk/contact.php
 redirect 301 /thank_you.html http://www.ycyrffgroupie.co.uk/thankyou.html
 redirect 301 /thank_you1.html http://www.ycyrffgroupie.co.uk/thankyou.html
-redirect 301 /interviews.html http://www.ycyrffgroupie.co.uk/interviews/index.html
 redirect 301 /aboutme.html http://www.ycyrffgroupie.co.uk/about_me.html
 redirect 301 /newguestbook.html http://www.ycyrffgroupie.co.uk/guestbook.html
 redirect 301 /profiles/submit_profile.php http://www.ycyrffgroupie.co.uk/profiles/submitprofile.php
-redirect 301 /images/site/back.jpg http://www.ycyrffgroupie.co.uk/Images/site/back.jpg
+#redirect 301 /Images/site/ http://www.ycyrffgroupie.co.uk/images/site/
+#redirect 301 /Images/interviews/ http://www.ycyrffgroupie.co.uk/images/interviews/
+redirect 301 /Images/bandpic1.html http://www.ycyrffgroupie.co.uk/Images/bandpic.html
+redirect 301 /Images/band_members_pic1.html http://www.ycyrffgroupie.co.uk/Images/bandmemberspic.html
+redirect 301 /Images/band_members_pic.html http://www.ycyrffgroupie.co.uk/Images/bandmemberspic.html
+redirect 301 /Images/index1.html http://www.ycyrffgroupie.co.uk/Images/index.html
+redirect 301 /Images/coverart1.html http://www.ycyrffgroupie.co.uk/Images/coverart.html
+#redirect 301 /css/ http://www.ycyrffgroupie.co.uk/includes/css/
 redirect 301 /index1.html http://www.ycyrffgroupie.co.uk/index.html
+
 redirect 301 /quiz.html http://www.ycyrffgroupie.co.uk/games/quiz.html
 redirect 301 /quiz1.html http://www.ycyrffgroupie.co.uk/games/quiz.html
 redirect 301 /games1.html http://www.ycyrffgroupie.co.uk/games/index.html
+redirect 301 /games.html http://www.ycyrffgroupie.co.uk/games/index.html
 redirect 301 /brick_wall.html http://www.ycyrffgroupie.co.uk/games/brickwall.html
 redirect 301 /brick_wall1.html http://www.ycyrffgroupie.co.uk/games/brickwall.html
 redirect 301 /alcohol_test.html http://www.ycyrffgroupie.co.uk/games/alcoholtest.html
 redirect 301 /alcohol_test1.html http://www.ycyrffgroupie.co.uk/games/alcoholtest.html
+redirect 301 /obsessed.html http://www.ycyrffgroupie.co.uk/games/obsessed.html
+redirect 301 /obsessed1.html http://www.ycyrffgroupie.co.uk/games/obsessed.html
+
 redirect 301 /profiles/christine_profile.html http://www.ycyrffgroupie.co.uk/profiles/christineprofile.html
+redirect 301 /profiles/christine_profile1.html http://www.ycyrffgroupie.co.uk/profiles/christineprofile.html
 redirect 301 /profiles/luke_profile.html http://www.ycyrffgroupie.co.uk/profiles/lukeprofile.html
 redirect 301 /profiles/luke_profile1.html http://www.ycyrffgroupie.co.uk/profiles/lukeprofile.html
 
+redirect 301 /cymru.html http://www.ycyrffgroupie.co.uk/news/cymru.html
+redirect 301 /bandit.html http://www.ycyrffgroupie.co.uk/news/bandit.html
+redirect 301 /worldhaschangedbuttheloveforycyrffisstillthere.html http://www.ycyrffgroupie.co.uk/news/worldhaschangedbuttheloveforycyrffisstillthere.html
+redirect 301 /documentaryonc2.html http://www.ycyrffgroupie.co.uk/news/documentaryonc2.html
+redirect 301 /bbcdoc.html http://www.ycyrffgroupie.co.uk/news/bbcdoc.html
+
+redirect 301 /interviews.html http://www.ycyrffgroupie.co.uk/interviews/index.html
+redirect 301 /localheros.html http://www.ycyrffgroupie.co.uk/interviews/localheros.html
+redirect 301 /catchingupwithcatatonia.html http://www.ycyrffgroupie.co.uk/interviews/catchingupwithcatatonia.html
+redirect 301 /cyrffcerysacatatonia.html http://www.ycyrffgroupie.co.uk/interviews/cyrffcerysacatatonia.html
+redirect 301 /formercatatoniaguitaristmarkrobertsreturnswithnewprojecttheearth.html http://www.ycyrffgroupie.co.uk/interviews/formercatatoniaguitaristmarkrobertsreturnswithnewprojecttheearth.html
+
+redirect 301 /rifiwbuzz.html http://www.ycyrffgroupie.co.uk/reviews/rifiwbuzz.html
+redirect 301 /atalnodllawnr.html http://www.ycyrffgroupie.co.uk/reviews/atalnodllawnr.html
+ 
+redirect 301 /nunlle.html http://www.ycyrffgroupie.co.uk/lyrics/nunlle.html
+redirect 301 /llawenyddhebddiwedd.html http://www.ycyrffgroupie.co.uk/lyrics/llawenyddhebddiwedd.html
+redirect 301 /eithaf.html http://www.ycyrffgroupie.co.uk/lyrics/eithaf.html
+redirect 301 /ydeffro.html http://www.ycyrffgroupie.co.uk/lyrics/ydeffro.html
+redirect 301 /cymrulloegrallanrwst.html http://www.ycyrffgroupie.co.uk/lyrics/cymrulloegrallanrwst.html
+redirect 301 /cwrdd.html http://www.ycyrffgroupie.co.uk/lyrics/cwrdd.html
+
+#the old landing pages from multimania.co.uk/ycyrffgroupie 
+
+redirect 301 /band1.html http://www.ycyrffgroupie.co.uk/band.html
+redirect 301 /me1.html http://www.ycyrffgroupie.co.uk/me.html
+redirect 301 /other1.html http://www.ycyrffgroupie.co.uk/other.html
+
+#serve up the www version of the site
 
 RewriteCond %{HTTP_HOST} ^ycyrffgroupie\.co.uk$
 RewriteRule (.*) http://www.ycyrffgroupie.co.uk/$1 [R=301,L]
+
+#Enable php in html files.
+
+AddHandler application/x-httpd-php5 .html .htm
