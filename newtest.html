@@ -1,6 +1,25 @@
 <?
-require('new.php');
-
-$newpages = whatnewen();
-print_r(newpages)
+require('includes/new.php');
 ?>
+<html>
+
+<head>
+<title>What is New? Beth Sy Newydd?</title>
+<meta http-equiv="Content-Type" content="text/html; charset=Iso-8859-14">
+<meta name="rating" content="General">
+<link rel="shortcut icon" href="/images/icon/cyrff.ico">
+<link rel="stylesheet" type="text/css" href="/css/style.css?v1.5"><!--IE couldn't get the style the other way. Don't know why.-->
+</head>
+<body>
+
+
+
+<?=whatnewen();?>
+</p>
+
+
+
+<?=whatnewcy();?>
+</p>
+</body>
+</html>

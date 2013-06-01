@@ -7,7 +7,7 @@
 <style>
 #container{
 /*border: 1px solid #ffffff;*/
-width:500px;
+width:460px;
 }
 #soundfilecontainer{
 /*border: 1px solid #ffffff;*/
@@ -20,6 +20,7 @@ line-height:12px;
 }
 #soundfilecontainer p{
 color:#800080;
+/*margin-top: -5px;*/
 }
 .songtitle{
 /*border: 1px solid #ffffff;*/
@@ -29,43 +30,97 @@ display:block;
 float: left;
 height: 30px;
 line-height:12px;
+padding-left: 5px;
 }
 .albums{
 /*border: 1px solid #ffffff;*/
-width: 277px;
+width: 227px;
 position:relative;
 display:block;
 float: right;
 height: 30px;
 line-height:12px;
 margin: auto;
+padding-left:5px;
 }
 
+a.info:link{
+/*Yes I know it's 1:45 on* sunday and Yes I am listening to Cymru, Lloegr a Llanrwst*/
+color:#800080;
+text-decoration: none;
+cursor:pointer;
+}
+
+a.info:hover{
+cursor:default;
+}
+
+a.music:link{
+color:#800080;
+text-decoration: none;
+cursor:pointer;
+}
+
+a.music:hover{
+/*cursor:default;*/
+}
+
+
+
 .popup{
-/*border: 1px solid black;*/
+border: 2px solid #ffd700;
 background-color: #ffffff;
 display: none;
 color:#800080;
-height: 80px;
+height: 100px;
 width: 200px;
-padding-left: 500px;
+margin-left: 226px;
+margin-top: -20px;
 line-height:14px;
+z-index:10;
+position: relative;
 }
 
+.popup p{
+/*padding:10px;*/
+vertical-align: middle;
+top: 25%;
+margin-top: 10px;
+position: absolute;
+}
 </style>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js">
 </script>
 <script type="text/javascript">
+//@@author: Christine A Black
+//yes this is my own work. All of it - mine. All mine. Errr I gues that includes bugs as well.
 $(document).ready(function(){
-	$("a.info").hover(function(){
-		var i = $("a.info").ndex(this);
-		$("div.popup").index(i){
-		$("div.popup").show();
-		});
+	$("a.info").click(function(){
+		event.preventDefault();
 	});
-	/*$("a.info").mouseleave(function(){
-		$("div.popup").hide();
-	});*/
+	$("a.info").hover(function(){
+		$(this).children(".popup").show();
+		//});
+	});
+	$("a.info").mouseleave(function(){
+		$(this).children(".popup").hide();
+	});
+	$("a.music").click(function(){
+		var file = $(this).attr("href");
+		var filemp3 = file +'mp3';
+		var fileogg = file+'ogg';
+		
+		$("source.mp3").attr('src',filemp3);
+		$("source.ogg").attr('src',fileogg);
+		
+		var aud = $("audio").get(0);
+		
+		aud.pause();
+		aud.load();
+		aud.play();
+		
+		event.preventDefault();
+	});
 });
 		
 </script>
@@ -76,228 +131,345 @@ $(document).ready(function(){
 </div>
 
 <div id="content">
+
+<!--3"--> 
+
 <audio controls preload="auto">
-	<source src="y_cyrff_mewn_plu.mp3" type='audio/mpeg; codecs="mp3"'/>
+	<!--Using my favourite track for the default. Otherwise it doesn't work. -->
+	<source class="mp3" src="y_cyrff_mewn_plu.mp3" type='audio/mpeg; codecs="mp3"'/>
+	<source class="ogg" src="y_cyrff_mewn_plu.ogg" type='audio/ogg; codecs="vorbis"'/>
+	<p>Sorry your broswer isn't supported. </p>
 </audio>
 
 <div id="container">
 
-	<div id="soundfilecontainer">
+	<div id="soundfilecontainer" style="padding-top:10px;">
 		<div class="songtitle"><p>Song Title / Teitl o Gan</p></div>
 		<div class="albums"><p>Album/Albwm</p></div>
 	</div>
 
 	<div id="soundfilecontainer">
-		<div class="songtitle"><a href="y_cyrff_ansicrwydd.mp3"<p>Ansicrwydd</p></a></div>
-		<div class="albums"><a class="info" href="">More info....</a></div>
-		<div class="popup">
-			<p>Atalnod LLawn, 
-			<br />
-			Mae DDoe Yn DDoe, 
-			<br />
-			Y Testament Newydd</p>
+		<div class="songtitle"><a class="music" href="y_cyrff_ansicrwydd."<p>Ansicrwydd</p></a></div>
+		<div class="albums"><a class="info" href="">More info....
+			<div class="popup">
+				<p>Atalnod LLawn, 
+				<br />
+				Mae DDoe Yn DDoe, 
+				<br />
+				Y Testament Newydd</p>
 		
+			</div>
+		</a>
 		</div>
+		
 	</div>
  	 
 	<div id="soundfilecontainer">
-		<div class="songtitle"><p>Anwybyddwch Ni	</p></div>
-		<div class="albums"><a class="info" href="">More info....</a></div>
-		<div class="popup">
-			<p>Atalnod LLawn, 
-			<br />
-			Damwain Mewn FFatri Cyllyll a FFyrc</p>
+		<div class="songtitle"><a class="music" href="y_cyrff_anwybyddwch_ni.">Anwybyddwch Ni	</a></div>
+		<div class="albums"><a class="info" href="">More info....
+			<div class="popup">
+				<p>Atalnod LLawn, 
+				<br />
+				Damwain Mewn FFatri Cyllyll a FFyrc</p>
+			</div>
+		
+		</a>
 		</div>
+		
 	</div>
 
 	<div id="soundfilecontainer">
-		<div class="songtitle"><p>Ar Goll</p></div>
-		<div class="albums"><p>Atalnod LLawn</p></div>
+		<div class="songtitle"><a class="music" href="y_cyrff_ar_goll.">Ar Goll</a></div>
+		<div class="albums"><a class="info" href="">More info....
+			<div class="popup">
+				<p>Atalnod LLawn</p>
+			</div>
+		</a></div>
 	</div>
 
 	<div id="soundfilecontainer">
-		<div class="songtitle"><p>Beddargraff	</p></div>
-		<div class="albums"><p>Atalnod LLawn, 
-LLawenydd Heb DDiwedd, 
-Mae DDoe Yn DDoe</p></div>
+		<div class="songtitle"><a class="music" href="y_cyrff_beddargraff.">Beddargraff	</a></div>
+		<div class="albums"><a class="info" href="">More info....
+			<div class="popup">		
+				<p>Atalnod LLawn, 
+				LLawenydd Heb DDiwedd, 
+				Mae DDoe Yn DDoe</p>
+			</div>`
+		</a></div>
 	</div>
  
 	<div id="soundfilecontainer">
-		<div class="songtitle"><p>Cadwyni</p></div>
-		<div class="albums"><p>Atalnod LLawn, 
-Mae DDoe Yn DDoe</p></div>
+		<div class="songtitle"><a class="music" href="y_cyrff_cadwyni.">Cadwyni</a></div>
+		<div class="albums"><a class="info" href="">More info....
+			<div class="popup">
+				<p>Atalnod LLawn, 
+				Mae DDoe Yn DDoe</p>
+			</div>
+		</a></div>
 	</div>
 
 	<div id="soundfilecontainer">
-		<div class="songtitle"><p>Cerdda Efo Fi Mewn Distawrydd</p></div>
-		<div class="albums"><p>Atalnod LLawn, 
-Mae DDoe Yn DDoe, 
-Untitled 12"</p></div>
+		<div class="songtitle"><a class="music" href="y_cyrff_cerdda_efo_fi_mewn_distawrwydd.">Cerdda Efo Fi Mewn Distawrydd</a></div>
+		<div class="albums"><a class="info" href="">More info....
+			<div class="popup">
+				<p>Atalnod LLawn, 
+				Mae DDoe Yn DDoe, 
+				Yr Atgyfodi</p>
+			</div>
+		</a></div>
 	</div>
 
 	<div id="soundfilecontainer">
-		<div class="songtitle"><p>Cofia Fi Yn DDiolchgar</p></div>
-		<div class="albums"><p>Atalnod LLawn, 
-Awdl o Anobaith, 
-Mae DDoe Yn DDoe, 
-Untitled 12"</p></div>
+		<div class="songtitle"><a class="music" href="y_cyrff_cofia_fi_yn_ddiolchgar.">Cofia Fi Yn DDiolchgar</a></div>
+		<div class="albums"><a class="info" href="">More info....
+			<div class="popup">
+				<p>Atalnod LLawn, 
+				Awdl o Anobaith, 
+				Mae DDoe Yn DDoe, 
+				Yr Atgyfodi</p>
+			</div>
+		</a></div>
 	</div>
 
 	<div id="soundfilecontainer">
-		<div class="songtitle"><p>Colli Er Mwyn Ennill</p></div>
-		<div class="albums"><p>Atalnod LLawn, 
-Mae DDoe Yn DDoe</p></div>
+		<div class="songtitle"><a class="music" href="y_cyrff_colli_er_mwyn_ennill.">Colli Er Mwyn Ennill</a></div>
+		<div class="albums"><a class="info" href="">More info....
+			<div class="popup">
+				<p>Atalnod LLawn, 
+				Mae DDoe Yn DDoe</p>
+			</div>
+		</a></div>
 	</div>
 
 	<div id="soundfilecontainer">
-		<div class="songtitle"><p>Cymru LLoegr A LLanrwst</p></div>
-		<div class="albums"><p>Atalnod LLawn, 
-Awdl o Anobaith, 
-Mae DDoe Yn DDoe, 
-Untitled 12"</p></div>
+		<div class="songtitle"><a class="music" href="y_cyrff_cymru_lloegr_a_llanrwst.">Cymru LLoegr A LLanrwst</a></div>
+		<div class="albums"><a class="info" href="">More info....
+			<div class="popup">
+				<p>Atalnod LLawn, 
+				Awdl o Anobaith, 
+				Mae DDoe Yn DDoe, 
+				Yr Atgyfodi</p>
+			</div>
+		</a></div>
 	</div>
  
 	<div id="soundfilecontainer">
-		<div class="songtitle"><p>Defnyddia Fi	</p></div>
-		<div class="albums"><p>Atalnod LLawn, 
-Awdl o Anobaith, 
-Mae DDoe Yn DDoe, 
-Y Testament Newydd</p></div>
+		<div class="songtitle"><a class="music" href="y_cyrff_defnyddia_fi.">Defnyddia Fi</a></div>
+		<div class="albums"><a class="info" href="">More info....
+			<div class="popup">
+				<p>Atalnod LLawn, 
+				Awdl o Anobaith, 
+				Mae DDoe Yn DDoe, 
+				Y Testament Newydd</p>
+			</div>
+		</a></div>
 	</div>
 
 	<div id="soundfilecontainer">
-		<div class="songtitle"><p>Eithaf</p></div>
-		<div class="albums"><p>Atalnod LLawn, 
-Damwain Mewn FFatri Cyllyll a FFyrc, 
-Mae DDoe Yn DDoe</p></div>
+		<div class="songtitle"><a class="music" href="y_cyrff_eithaf.">Eithaf</a></div>
+		<div class="albums"><a class="info" href="">More info....
+			<div class="popup">
+				<p>Atalnod LLawn, 
+				Damwain Mewn FFatri Cyllyll a FFyrc, 
+				Mae DDoe Yn DDoe</p>
+			</div>
+		</a></div>
 	</div>
 
 	<div id="soundfilecontainer">
-		<div class="songtitle"><p>Euog	</p></div>
-		<div class="albums"><p>Atalnod LLawn, 
-LLawenydd Heb DDiwedd</p></div>
+		<div class="songtitle"><a class="music" href="y_cyrff_euog.">Euog</a></p></div>
+		<div class="albums"><a class="info" href="">More info....
+			<div class="popup">
+				<p>Atalnod LLawn, 
+				LLawenydd Heb DDiwedd</p>
+			</div>
+		</a></div>
 	</div>
 
 	<div id="soundfilecontainer">
-		<div class="songtitle"><p>HTV/BBC</p></div>
-		<div class="albums"><p>Atalnod LLawn, 
-Mae DDoe Yn DDoe</p></div>
+		<div class="songtitle"><a class="music" href="y_cyrff_htv_bbc.">HTV/BBC</a></div>
+		<div class="albums"><a class="info" href="">More info....
+			<div class="popup">
+				<p>Atalnod LLawn, 
+				Mae DDoe Yn DDoe</p>
+			</div>
+		</a></div>
 	</div>
 	 
 	<div id="soundfilecontainer">
-		<div class="songtitle"><p>Hunanladdiad</p></div>
-		<div class="albums"><p>Damwain Mewn FFatri Cyllyll a FFyrc</p></div>
+		<div class="songtitle"><a class="music" href="y_cyrff_hunanladdiadd.">Hunanladdiad</a></div>
+		<div class="albums"><a class="info" href="">More info....
+			<div class="popup">
+				<p>Damwain Mewn FFatri Cyllyll a FFyrc</p>
+			</div>
+		</a></div>
 	</div>
 
 	<div id="soundfilecontainer">
-		<div class="songtitle"><p>Hwyl Fawr Heulwen</p></div>
-		<div class="albums"><p>Atalnod LLawn, 
-Mae DDoe Yn DDoe</p></div>
+		<div class="songtitle"><a class="music" href="y_cyrff_hwyl_fawr_heulwen.">Hwyl Fawr Heulwen</a></div>
+		<div class="albums"><a class="info" href="">More info....
+			<div class="popup">
+				<p>Atalnod LLawn, 
+				Mae DDoe Yn DDoe</p>
+			</div>
+		</a></div>
 	</div>
 
 	<div id="soundfilecontainer">
-		<div class="songtitle"><p>Lebanon</p></div>
-		<div class="albums"><p>Cam O'r Tywyllwch, 
-Damwain Mewn FFatri Cyllyll a FFyrc</p></div>
+		<div class="songtitle"><a class="music" href="y_cyrff_lebanon.">Lebanon</a></div>
+		<div class="albums"><a class="info" href="">More info....
+			<div class="popup">
+				<p>Cam O'r Tywyllwch, 
+				Damwain Mewn FFatri Cyllyll a FFyrc</p>
+			</div>
+		</a></div>
 	</div>
 
 	<div id="soundfilecontainer">
-		<div class="songtitle"><p>LLawenydd Heb DDiwedd</p></div>
-		<div class="albums"><p>Atalnod LLawn, 
-Damwain Mewn FFatri Cyllyll a FFyrc, 
-LLawenydd Heb DDiwedd, 
-Mae DDoe Yn DDoe</p></div>
+		<div class="songtitle"><a class="music" href="y_cyrff_llawenydd_heb_ddiwedd.">LLawenydd Heb DDiwedd</a></div>
+		<div class="albums"><a class="info" href="">More info....
+			<div class="popup">
+				<p>Atalnod LLawn, <br />
+				Damwain Mewn FFatri Cyllyll a FFyrc, <br />
+				LLawenydd Heb DDiwedd,  <br />
+				Mae DDoe Yn DDoe</p>
+			</div>
+		</a></div>
 	</div>
 
 	<div id="soundfilecontainer">
-		<div class="songtitle"><p>Mewn Plu</p></div>
-		<div class="albums"><p>Atalnod LLawn, 
-Damwain Mewn FFatri Cyllyll a FFyrc, 
-Mae DDoe Yn DDoe</p></div>
+		<div class="songtitle"><a class="music" href="y_cyrff_mewn_plu.">Mewn Plu</a></div>
+		<div class="albums"><a class="info" href="">More info....
+			<div class="popup">
+				<p>Atalnod LLawn, 
+				Damwain Mewn FFatri Cyllyll a FFyrc, 
+				Mae DDoe Yn DDoe</p>
+			</div>
+		</a></div>
 	</div>
 
 	<div id="soundfilecontainer">
-		<div class="songtitle"><p>Pethau Achlysurol	</p></div>
-		<div class="albums"><p>Atalnod LLawn, 
-Damwain Mewn FFatri Cyllyll a FFyrc, 
-Mae DDoe Yn DDoe</p></div>
+		<div class="songtitle"><a class="music" href="y_cyrff_pethau_achlysurol.">Pethau Achlysurol	</a></div>
+		<div class="albums"><a class="info" href="">More info....
+			<div class="popup">
+				<p>Atalnod LLawn, 
+				Damwain Mewn FFatri Cyllyll a FFyrc, 
+				Mae DDoe Yn DDoe</p>
+			</div>
+		</a></div>
 	</div>
 
 	<div id="soundfilecontainer">
-		<div class="songtitle"><p>Pum Munud</p></div>
-		<div class="albums"><p>Atalnod LLawn, 
-Mae DDoe Yn DDoe</p></div>
+		<div class="songtitle"><a class="music" href="y_cyrff_pum_munud.">Pum Munud</a></div>
+		<div class="albums"><a class="info" href="">More info....
+			<div class="popup">
+				<p>Atalnod LLawn, 
+				Mae DDoe Yn DDoe</p>
+			</div>
+		</a></div>
 	</div>
 
 	<div id="soundfilecontainer">
-		<div class="songtitle"><p>Rockabilly</p></div>
+		<div class="songtitle"><a class="music" href="y_cyrff_rockabilly.">Rockabilly</a></div>
 		<div class="albums"><p></p></div>
 	</div>
  	 
 	<div id="soundfilecontainer">
-		<div class="songtitle"><p>RHywbeth Teulol</p></div>
-		<div class="albums"><p>Awdl o Anobaith</p></div>
+		<div class="songtitle"><a class="music" href="y_cyrff_rhywbeth_teulol.">RHywbeth Teulol</a></div>
+		<div class="albums"><a class="info" href="">More info....
+			<div class="popup">
+				<p>Awdl o Anobaith</p>
+			</div>
+		</a></div>
 	</div>
  
 	<div id="soundfilecontainer">
-		<div class="songtitle"><p>Ti'n Gwybod Be Dwi'n Licio</p></div>
+		<div class="songtitle"><a class="music" href="y_cyrff_tin_gwybod_be_dwin_licio.">Ti'n Gwybod Be Dwi'n Licio</a></div>
 		<div class="albums"><p></p></div>
 	</div>
  	 
 	<div id="soundfilecontainer">
-		<div class="songtitle"><p>Trwy'r Cymylau</p></div>
-		<div class="albums"><p>Atalnod LLawn, 
-Damwain Mewn FFatri Cyllyll a FFyrc, 
-Mae DDoe Yn DDoe</p></div>
+		<div class="songtitle"><a class="music" href="y_cyrff_trwyr_cymylau.">Trwy'r Cymylau</a></div>
+		<div class="albums"><a class="info" href="">More info....
+			<div class="popup">
+				<p>Atalnod LLawn, 
+				Damwain Mewn FFatri Cyllyll a FFyrc, 
+				Mae DDoe Yn DDoe</p>
+			</div>
+		</a></div>
 	</div>
 
 	<div id="soundfilecontainer">
-		<div class="songtitle"><p>Unigrwydd	 </p></div>
+		<div class="songtitle"><a class="music" href="y_cyrff_unigrwydd.">Unigrwydd </a></div>
 		<div class="albums"><p></p></div>
 	</div>
  	 
 	<div id="soundfilecontainer">
-		<div class="songtitle"><p>Weithiau/Anadl</p></div>
-		<div class="albums"><p>Awdl o Anobaith, 
-Mae DDoe Yn DDoe, 
-Untitled 12"</p></div>
+		<div class="songtitle"><a class="music" href="y_cyrff_weithiau_anadl.">Weithiau/Anadl</a></div>
+		<div class="albums"><a class="info" href="">More info....
+			<div class="popup">
+				<p>Awdl o Anobaith, 
+				Mae DDoe Yn DDoe, 
+				Yr Atgyfodi</p>
+			</div>
+		</a></div>
 	</div>
 
 	<div id="soundfilecontainer">
-		<div class="songtitle"><p>Y Boddi</p></div>
-		<div class="albums"><p>Atalnod LLawn, 
-Mae DDoe Yn DDoe, 
-Untitled 12"</p></div>
+		<div class="songtitle"><a class="music" href="y_cyrff_y_boddi.">Y Boddi</a></div>
+		<div class="albums"><a class="info" href="">More info....
+			<div class="popup">
+				<p>Atalnod LLawn, 
+				Mae DDoe Yn DDoe, 
+				Yr Atgyfodi</p>
+			</div>
+		</a></div>
 	</div>
 
 	<div id="soundfilecontainer">
-		<div class="songtitle"><p>Y Cyfrifoldeb</p></div>
-		<div class="albums"><p>Atalnod LLawn, 
-Awdl o Anobaith, 
-Mae DDoe Yn DDoe, 
-Y Testament Newydd</p></div>
+		<div class="songtitle"><a class="music" href="y_cyrff_y_cyfrifoldeb.">Y Cyfrifoldeb</a></div>
+		<div class="albums"><a class="info" href="">More info....
+			<div class="popup">
+				<p>Atalnod LLawn, 
+				Awdl o Anobaith, 
+				Mae DDoe Yn DDoe, 
+				Y Testament Newydd</p>
+			</div>
+		</a></div>
 	</div>
 
 	<div id="soundfilecontainer">
-		<div class="songtitle"><p>Y Deffro</p></div>
-		<div class="albums"><p>Atalnod LLawn, 
-Awdl o Anobaith, 
-Mae DDoe Yn DDoe, 
-Y Testament Newydd</p></div>
+		<div class="songtitle"><a class="music" href="y_cyrff_y_deffro.">Y Deffro</a></div>
+		<div class="albums"><a class="info" href="">More info....
+			<div class="popup">
+				<p>Atalnod LLawn, 
+				Awdl o Anobaith, 
+				Mae DDoe Yn DDoe, 
+				Y Testament Newydd</p>
+			</div>
+		</a></div>
 	</div>
 
 	<div id="soundfilecontainer">
-		<div class="songtitle"><p>Y Pleser</p></div>
-		<div class="albums"><p>Atalnod LLawn, 
-Awdl o Anobaith, 
-Mae DDoe Yn DDoe, 
-Y Testament Newydd</p></div>
+		<div class="songtitle"><a class="music" href="y_cyrff_y_pleser.">Y Pleser</a></div>
+		<div class="albums"><a class="info" href="">More info....
+			<div class="popup">
+				<p>Atalnod LLawn, 
+				Awdl o Anobaith, 
+				Mae DDoe Yn DDoe, 
+				Y Testament Newydd</p>
+			</div>
+		</a></div>
 	</div>
 
 	<div id="soundfilecontainer">
-		<div class="songtitle"><p>Yr Haint	</p></div>
-		<div class="albums"><p>Atalnod LLawn, 
-Mae DDoe Yn DDoe</p></div>
+		<div class="songtitle"><a class="music" href="y_cyrff_yr_haint.">Yr Haint</a></div>
+		<div class="albums"><a class="info" href="">More info....
+			<div class="popup">
+				<p>Atalnod LLawn, 
+				Mae DDoe Yn DDoe</p>
+			</div>
+		</a></div>
 	</div>
 	
 </div>
