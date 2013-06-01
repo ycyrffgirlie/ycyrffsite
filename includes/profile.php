@@ -15,6 +15,7 @@ function getprofile($profileid){
 	$query = mysql_query($sql);
 	$profileinfo = mysql_fetch_assoc($query);
 	
+	if ($profileinfo){
 	$output = '<p><span class="bold">Name/Enw:</span>&nbsp;'.$profileinfo['name'].'
 			<br>
 			<span class="bold">Location/<span lang="cy">LLe:</span></span>&nbsp;'.$profileinfo['place'].'
@@ -31,6 +32,9 @@ function getprofile($profileid){
 			<br>
 			<span class="bold">Other comments/<span lang="cy">Eraill sywl:</span></span>&nbsp;'.$profileinfo['comment'].'
 			</p>';
+		}else{
+			$output = '<p>This profile doesn\'t exist</p>';
+		}
 	
 	mysql_close($connection);
 	return $output;

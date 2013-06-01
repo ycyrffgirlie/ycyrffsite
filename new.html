@@ -1,19 +1,17 @@
-<?
+<?php
 require('includes/new.php');
 include("includes/header.php");
 ?>
-</head>
-
 
 <body>
 
-<?=whatnewen();?>
+<?php echo whatnewen();?>
 </p>
 
-<?=whatnewcy();?>
+<?php echo whatnewcy();?>
 </p>
 
-<p><script language="Javascript">
+<p><script>
 <!--
 document.write(document.lastModified);
 //-->
@@ -38,5 +36,7 @@ if (in_array($_SERVER[HTTP_REFERER],$internal)){
 <?php
 }
 ?>
+
+</body>
 
 </html>

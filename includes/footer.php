@@ -125,7 +125,31 @@ footer is for your information.</p>";
 }
 if ($browsername == Chrome){
 	//echo "your are using chrome";
-	if ($browsernversion <= 15.0){
+	if  ($browsernversion == 0){
+		$to = 'ycyrffgroupie@gmail.com';
+		$subject = 'Update browsercap';
+		$message = '<body style="background:#800080;" link="ffd700" alink="ffd700" >
+			<p><font color="ffd700">Site\'s broken. You need to update browsercap.</font></p>
+			<p><font color="ffd700">'.$_SERVER[REMOTE_ADDR].' has just requested 
+			<a style="color: #ffd700;" href="'.$_SERVER[HTTP_HOST].'/'.$_SERVER[REQUEST_URI].'">
+			this page</a> using '.$browsername.'.The script couldn\'t detect the browser version.';
+			if ($_SERVER[HTTP_REFERER] != NULL && $_SERVER[HTTP_REFERER] != ' '){
+			
+		$message .= 'The refering url is: '.$_SERVER[HTTP_REFERER];
+			}
+		
+		$message .='</font></p>
+			<br>
+			<br>
+			<p><font color="ffd700">Thanks,
+			<br>
+			One nutty fan.</font></p>
+			</body>';
+		$headers ='MIME-Version: 1.0'."\r\n";
+		$headers .= 'Content-Type: text/html; charset=\"utf-8\"'. "\r\n";
+		$headers .='From: ycyrffgroupie@gmail.com'. "\r\n";			
+		mail($to,$subject,$message, $headers);
+	}elseif ($browsernversion <= 15.0){
 		echo "<p>This site doesn't support your version of Chrome. Please update your browser</p>
 		<p>Nid we safle hwn yn cefnogi eich fersiwn o Chrome. Diweddarwch eich porwr.</p>";
 		if ($os == 'Windows Vista' || $os == 'Windows XP' || $os == 'Windows 7'){

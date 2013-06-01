@@ -19,10 +19,10 @@ $counter = 0;
 foreach ($files as $file){
 
 	if (!preg_match('/christine/',$file) && !preg_match('/admin/',$file) &&
-	!preg_match('/css/',$file) && !preg_match('/dev/',$file)  && !preg_match('/includes/',$file) 
+	!preg_match('/css/',$file) && !preg_match('/dev/',$file)   && !preg_match('/forum/',$file)  && !preg_match('/includes/',$file) 
 	&& !preg_match('/images/',$file) && !preg_match('/llwybrllaethog/',$file) &&
 	!preg_match('/cgi-bin/',$file) && !preg_match('/other/',$file) && !preg_match('/uploads/',$file)
-	&& !preg_match('/phplinks/',$file)){
+	&& !preg_match('/phplinks/',$file) && !preg_match('/seo/',$file) && !preg_match('/bugs/',$file)){
 		if (!preg_match('/.shtml/',$file) && !preg_match('/.xml/',$file) &&
 		!preg_match('/about/',$file)  && !preg_match('/1.html/',$file) && !preg_match('/.txt/',$file)
 		&& !preg_match('/.htc/',$file) && !preg_match('/Sqh40j/',$file) && !preg_match ('/dcc24/',$file)
@@ -166,7 +166,7 @@ $counter = 0;
 foreach ($files as $file){
 	if (!preg_match('/.db/', $file) && !preg_match('/.jpg/', $file)  && !preg_match('/.JPG/', $file) &&
 	!preg_match('/.LOG/', $file)  && !preg_match('/.htaccess/', $file) && !preg_match('/.mp3/', $file) && !preg_match('/.class/', $file) 
-	&& !preg_match('/.gif/', $file) && !preg_match('/contact.php/', $file)
+	&& !preg_match('/.gif/', $file) && !preg_match('/contact.php/', $file)  && !preg_match('/fanprofile.php/', $file)
 	){
 		if (preg_match('/site/', $file) || preg_match('/icon/',$file)){
 			$dir2 = $file;
@@ -273,7 +273,7 @@ if (!$query){
 <body>
 <?php
 
-$filepaths = getfiles();
+//$filepaths = getfiles();
 $filesinfo = getfilesinfo();
 //print_r($filesinfo)
 ?>
@@ -331,8 +331,8 @@ if ($numofrows >= 1){
 }else{
 	$sql4 = "INSERT INTO pages(filename, title, keywords, descriptionen, facebooktitle, facebookdescription, datelastmodified )
 					VALUES('".$filesinfo[$i][name]."','".$filesinfo[$i][title]."','".$filesinfo[$i][keywords]."','".$filesinfo[$i][description]."','".$filesinfo[$i][title]."','".$filesinfo[$i][description]."','".$filesinfo[$i][datelastmodified]."')";
-$query4 = mysql_query($sql4);
-echo '<p>'.$sql4.'</p>';
+//$query4 = mysql_query($sql4);
+//echo '<p>'.$sql4.'</p>';
 echo '<p>Page '.$filesinfo[$i][name].' has been added.</p>';
 }
 
